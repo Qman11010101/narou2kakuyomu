@@ -1,0 +1,15 @@
+#novelnavi_right {
+    display: none;
+}
+
+#novelnavi_right_alter {
+    top: 5px;
+    right: 5px;
+    padding: 5px 0;
+    width: 70px;
+    position: fixed;
+    margin: 5px 15px 0 0;
+    border: 1px solid #000000;
+    text-align: center;
+    background: #ffffff;
+}

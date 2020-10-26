@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Narou2Kakuyomu",
+    "version": "0.1a",
+    "description": "小説家になろう上でカクヨムのデザインを再現する拡張機能",
+    "icons": {
+        "48": "icons/48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://ncode.syosetu.com/*"
+            ],
+            "js": [
+                "apply_style.js"
+            ],
+            "css": [
+                "./css/narou-kinari.css",
+                "./css/general.css"
+            ]
+        }
+    ]
+}
