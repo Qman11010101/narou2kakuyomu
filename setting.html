@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/setting.css">
 </head>
+
 <body>
-<p>てすと</p>
+    <h3>表示設定</h3>
+    <h4>文字サイズ</h4>
+    <form class="font_size">
+        <label for="small" style="cursor: pointer;">小
+        <input type="radio" name="font_size" value="small" id="small" /></label>
+        <label for="medium" style="cursor: pointer;">中
+        <input type="radio" name="font_size" value="medium" id="medium" /></label>
+        <label for="large" style="cursor: pointer;">大
+        <input type="radio" name="font_size" value="large" id="large" /></label>
+        <label for="large" style="cursor: pointer;">特大
+        <input type="radio" name="font_size" value="xLarge" id="xlarge" /></label>
+    </form>
+    <h4>背景色</h4>
+    <form class="background_color">
+        <label for="white" style="cursor: pointer;">白
+        <input type="radio" name="background_color" value="white" id="white" /></label>
+        <label for="black" style="cursor: pointer;">黒
+        <input type="radio" name="background_color" value="black" id="black" /></label>
+        <label for="kinari" style="cursor: pointer;">生成り
+        <input type="radio" name="background_color" value="kinari" id="kinari" /></label>
+        <label for="water" style="cursor: pointer;">水色
+        <input type="radio" name="background_color" value="water" id="water" /></label>
+    </form>
+    <h4>フォント</h4>
+    <form class="font_style">
+        <label for="mincho" style="cursor: pointer;">明朝
+        <input type="radio" name="font_style" value="mincho" id="mincho" /></label>
+        <label for="gothic" style="cursor: pointer;">ゴシック
+        <input type="radio" name="font_style" value="gothic" id="gothic" /></label>
+    </form>
+    <br>
+    <button>保存する</button>
 </body>
+
 </html>

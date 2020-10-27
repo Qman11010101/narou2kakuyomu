@@ -16,7 +16,8 @@
                 "apply_style.js"
             ],
             "css": [
-                "./css/general.css"
+                "./css/general.css",
+                "./css/setting.css"
             ]
         }
     ],
