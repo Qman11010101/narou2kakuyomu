@@ -1,9 +1,16 @@
+:root {
+    --n2k-color-bg: #F7F6EB;
+    --n2k-color-text: #292826;
+    --n2k-font-gothic: dcsymbols,'Helvetica Neue',Helvetica,Arial,'ヒラギノ角ゴ Pr6N','Hiragino Kaku Gothic Pr6N','ヒラギノ角ゴ ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','Segoe UI',Verdana,'メイリオ',Meiryo,sans-serif;
+    --n2k-font-mincho: dcsymbols,'游明朝',YuMincho,'ヒラギノ明朝 Pr6N','Hiragino Mincho Pr6N','ヒラギノ明朝 ProN','Hiragino Mincho ProN','ヒラギノ明朝 StdN','Hiragino Mincho StdN',HiraMinProN-W3,'HGS明朝B','HG明朝B',dcsymbols,'Helvetica Neue',Helvetica,Arial,'ヒラギノ角ゴ Pr6N','Hiragino Kaku Gothic Pr6N','ヒラギノ角ゴ ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','Segoe UI',Verdana,'メイリオ',Meiryo,sans-serif;
+}
+
 html {
-    background: #F7F6EB;
+    background: var(--n2k-color-bg);
 }
 
 body {
-    font-family: dcsymbols,'Helvetica Neue',Helvetica,Arial,'ヒラギノ角ゴ Pr6N','Hiragino Kaku Gothic Pr6N','ヒラギノ角ゴ ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','Segoe UI',Verdana,'メイリオ',Meiryo,sans-serif;
+    font-family: var(--n2k-font-gothic);
 }
 
 ul#head_nav li a {
@@ -11,21 +18,21 @@ ul#head_nav li a {
 }
 
 #novel_contents {
-    background: #F7F6EB;
+    background: var(--n2k-color-bg);
 }
 
 #novel_header {
-    background: #F7F6EB;
+    background: var(--n2k-color-bg);
     box-shadow: 0 1px 0 0 rgba(0,0,0,.05);
 }
 
 #novel_color {
     font-size: 14px;
-    color: #292826;
+    color: var(--n2k-color-text);
 }
 
 a, a:visited {
-    color: #292826;
+    color: var(--n2k-color-text);
 }
 
 a:hover, ul#head_nav li a:hover {
@@ -46,7 +53,7 @@ a:hover, ul#head_nav li a:hover {
 #novel_honbun, #novel_p, #novel_a {
     line-height: 1.8;
     font-size: 17.5px !important;
-    font-family: dcsymbols,'游明朝',YuMincho,'ヒラギノ明朝 Pr6N','Hiragino Mincho Pr6N','ヒラギノ明朝 ProN','Hiragino Mincho ProN','ヒラギノ明朝 StdN','Hiragino Mincho StdN',HiraMinProN-W3,'HGS明朝B','HG明朝B',dcsymbols,'Helvetica Neue',Helvetica,Arial,'ヒラギノ角ゴ Pr6N','Hiragino Kaku Gothic Pr6N','ヒラギノ角ゴ ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','Segoe UI',Verdana,'メイリオ',Meiryo,sans-serif;
+    font-family: var(--n2k-font-mincho);
 }
 
 .novel_subtitle {
@@ -54,7 +61,7 @@ a:hover, ul#head_nav li a:hover {
     line-height: 1.3em;
     font-weight: 400;
     margin: 32px auto 60px;
-    font-family: dcsymbols,'Helvetica Neue',Helvetica,Arial,'ヒラギノ角ゴ Pr6N','Hiragino Kaku Gothic Pr6N','ヒラギノ角ゴ ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','Segoe UI',Verdana,'メイリオ',Meiryo,sans-serif;
+    font-family: var(--n2k-font-gothic);
 }
 
 
