@@ -15,7 +15,6 @@
                 "apply_style.js"
             ],
             "css": [
-                "./css/narou-kinari.css",
                 "./css/general.css"
             ]
         }
