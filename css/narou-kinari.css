@@ -1,12 +1,15 @@
 :root {
-    --n2k-color-bg: #F7F6EB;
-    --n2k-color-text: #292826;
+    --n2k-color-kinari: #F7F6EB;
+    --n2k-color-kinari-dark: #EBE9DD;
+    --n2k-color-black: #292826;
+    --n2k-color-gray: #888888;
+    --n2k-color-azure: #0081c2;
     --n2k-font-gothic: dcsymbols,'Helvetica Neue',Helvetica,Arial,'ヒラギノ角ゴ Pr6N','Hiragino Kaku Gothic Pr6N','ヒラギノ角ゴ ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','Segoe UI',Verdana,'メイリオ',Meiryo,sans-serif;
     --n2k-font-mincho: dcsymbols,'游明朝',YuMincho,'ヒラギノ明朝 Pr6N','Hiragino Mincho Pr6N','ヒラギノ明朝 ProN','Hiragino Mincho ProN','ヒラギノ明朝 StdN','Hiragino Mincho StdN',HiraMinProN-W3,'HGS明朝B','HG明朝B',dcsymbols,'Helvetica Neue',Helvetica,Arial,'ヒラギノ角ゴ Pr6N','Hiragino Kaku Gothic Pr6N','ヒラギノ角ゴ ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','Segoe UI',Verdana,'メイリオ',Meiryo,sans-serif;
 }
 
 html {
-    background: var(--n2k-color-bg);
+    background: var(--n2k-color-kinari);
 }
 
 body {
@@ -14,37 +17,36 @@ body {
 }
 
 ul#head_nav li a {
-    color: #888;
+    color: var(--n2k-color-gray);
 }
 
 #novel_contents {
-    background: var(--n2k-color-bg);
+    background: var(--n2k-color-kinari);
 }
 
 #novel_header {
-    background: var(--n2k-color-bg);
+    background: var(--n2k-color-kinari);
     box-shadow: 0 1px 0 0 rgba(0,0,0,.05);
 }
 
 #novel_color {
     font-size: 14px;
-    color: var(--n2k-color-text);
+    color: var(--n2k-color-black);
 }
 
 a, a:visited {
-    color: var(--n2k-color-text);
+    color: var(--n2k-color-black);
 }
 
 a:hover, ul#head_nav li a:hover {
-    color: #0081c2;
+    color: var(--n2k-color-azure);
     text-decoration: underline;
 }
 
 .novel_bn {
     writing-mode: horizontal-tb;
     display: block;
-    background: #EBE9DD;
-    color: #6a6968 !important;
+    background: var(--n2k-color-kinari-dark);
     padding: 13px 10px;
     font-size: .9em;
     line-height: 1.3;
