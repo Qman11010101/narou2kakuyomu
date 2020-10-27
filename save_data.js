@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             background_color: bgcl,
             font_style: font
         }
-        browser.storage.sync.set(kvobj).then(check_pass(), onError());
+        browser.storage.local.set(kvobj).then(check_pass(), onError()); // 若干ちゃんと動作してるのか怪しいので調べる
     });
 });
 
@@ -27,6 +27,6 @@ function check_fail(){
 }
 
 function onError(error) {
-    check_fail()
+    // check_fail()
     alert("予期しないエラーが発生しました。" + error.message);
 }
