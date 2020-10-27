@@ -1,15 +1,35 @@
-#novelnavi_right {
+.toggle, .toggle_menuclose {
     display: none;
 }
 
-#novelnavi_right_alter {
+/* #novelnavi_button_alter {
+    top: 6px;
+    right: 25px;
+    height: 32px;
+    width: 70px;
+    position: fixed;
+    border: 1px solid #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+#novelnavi_button_alter {
+    margin: 5px 15px 0 0;
+    position: fixed;
     top: 5px;
     right: 5px;
     padding: 5px 0;
+    cursor: pointer;
     width: 70px;
-    position: fixed;
-    margin: 5px 15px 0 0;
-    border: 1px solid #000000;
     text-align: center;
+    font-size: 85%;
+    color: #666666;
+    font-weight: bold;
+    border: 1px solid #bbbbbb;
+    border-bottom: 1px solid #999999;
     background: #ffffff;
 }
