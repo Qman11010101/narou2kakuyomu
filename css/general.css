@@ -3,13 +3,13 @@
 }
 
 #novelnavi_right_alter {
-    top: 5px;
-    right: 5px;
-    padding: 5px 0;
+    top: 6px;
+    right: 4px;
+    height: 32px;
     width: 70px;
     position: fixed;
-    margin: 5px 15px 0 0;
     border: 1px solid #000000;
+    display: table-cell;
     text-align: center;
     background: #ffffff;
 }
