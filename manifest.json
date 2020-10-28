@@ -12,21 +12,27 @@
                 "*://ncode.syosetu.com/*"
             ],
             "js": [
-                "jquery-3.5.1.min.js",
                 "apply_style.js"
             ],
             "css": [
-                "./css/general.css"
+                "./css/general.css",
+                "./css/setting.css"
             ]
         }
     ],
-    "browser_action":{
+    "browser_action": {
         "default_icon": {
-            "48" : "icons/48.png"
+            "48": "icons/48.png"
         },
         "default_popup": "setting.html"
     },
     "permissions": [
         "storage"
-    ]
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id":"{CAAAB3FF-7DFF-4EC0-8735-AC03C1542721}",
+            "strict_min_version": "42.0"
+        }
+    }
 }

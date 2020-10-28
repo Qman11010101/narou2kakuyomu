@@ -1,9 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="css/setting.css"> -->
+    <script src="save_data.js"></script>
 </head>
+
 <body>
-<p>てすと</p>
+    <h3>表示設定</h3>
+    <h4>文字サイズ</h4>
+    <form id="font_size">
+        <label for="small">小
+            <input type="radio" name="font_size" value="small" id="small">
+        </label>
+        <label for="medium">中
+            <input type="radio" name="font_size" value="medium" id="medium" checked>
+        </label>
+        <label for="large">大
+            <input type="radio" name="font_size" value="large" id="large">
+        </label>
+        <label for="large">特大
+            <input type="radio" name="font_size" value="xLarge" id="xlarge">
+        </label>
+    </form>
+    <h4>背景色</h4>
+    <form id="background_color">
+        <label for="white">白
+            <input type="radio" name="background_color" value="white" id="white" checked>
+        </label>
+        <label for="black">黒
+            <input type="radio" name="background_color" value="black" id="black">
+        </label>
+        <label for="kinari">生成り
+            <input type="radio" name="background_color" value="kinari" id="kinari">
+        </label>
+        <label for="water">水色
+            <input type="radio" name="background_color" value="water" id="water">
+        </label>
+    </form>
+    <h4>フォント</h4>
+    <form id="font_style">
+        <label for="mincho">明朝
+            <input type="radio" name="font_style" value="mincho" id="mincho" checked>
+        </label>
+        <label for="gothic">ゴシック
+            <input type="radio" name="font_style" value="gothic" id="gothic">
+        </label>
+    </form>
+    <br>
+    <button id="save_data">保存する</button><span id="check"></span>
 </body>
+
 </html>
