@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             background_color: bgcl,
             font_style: font
         }
-        browser.storage.local.set(kvobj).then(check_pass(), onError()); // 若干ちゃんと動作してるのか怪しいので調べる
+        browser.storage.sync.set(kvobj).then(check_pass(), onError()); // 若干ちゃんと動作してるのか怪しいので調べる
     });
 });
 

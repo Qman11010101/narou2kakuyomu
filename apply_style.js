@@ -1,5 +1,5 @@
 // 保存された値のロード(デフォルト値つき)
-const kvobj = browser.storage.local.get({
+const kvobj = browser.storage.sync.get({
     font_size: "middle",
     background_color: "white",
     font_style: "gothic"
