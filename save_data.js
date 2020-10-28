@@ -10,23 +10,26 @@ document.addEventListener("DOMContentLoaded", function () {
             background_color: bgcl,
             font_style: font
         }
-        browser.storage.sync.set(kvobj).then(check_pass(), onError()); // 若干ちゃんと動作してるのか怪しいので調べる
+        browser.storage.sync.set(kvobj, check_pass());
+        browser.storage.sync.get("font_size", function(size){
+            alert(JSON.stringify(size));
+        });
     });
 });
 
 function check_pass() {
     const checkspan = document.getElementById("check");
     checkspan.style.color = "#009900";
-    checkspan.textContent = "✓";
+    checkspan.textContent = " ✓ 保存しました";
 }
 
-function check_fail(){
-    const checkspan = document.getElementById("check");
-    checkspan.style.color = "#ff0000";
-    checkspan.textContent = "✗";
-}
+// function check_fail(){
+//     const checkspan = document.getElementById("check");
+//     checkspan.style.color = "#ff0000";
+//     checkspan.textContent = "✗";
+// }
 
-function onError(error) {
-    // check_fail()
-    alert("予期しないエラーが発生しました。" + error.message);
-}
+// function onError(error) {
+//     // check_fail()
+//     alert("予期しないエラーが発生しました。" + error.message);
+// }
