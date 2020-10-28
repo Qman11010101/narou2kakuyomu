@@ -11,42 +11,28 @@
     <h3>表示設定</h3>
     <h4>文字サイズ</h4>
     <form id="font_size">
-        <label for="small">小
-            <input type="radio" name="font_size" value="small" id="small">
-        </label>
-        <label for="medium">中
-            <input type="radio" name="font_size" value="medium" id="medium" checked>
-        </label>
-        <label for="large">大
-            <input type="radio" name="font_size" value="large" id="large">
-        </label>
-        <label for="huge">特大
-            <input type="radio" name="font_size" value="huge" id="huge">
-        </label>
+        <div class="container">
+            <div class="selectbox"><input type="radio" name="font_size" value="medium" id="medium" checked><label for="medium">中</label></div>
+            <div class="selectbox"><input type="radio" name="font_size" value="small" id="small"><label for="small">小</label></div>
+            <div class="selectbox"><input type="radio" name="font_size" value="large" id="large"><label for="large">大</label></div>
+            <div class="selectbox"><input type="radio" name="font_size" value="huge" id="huge"><label for="huge">特大</label></div>
+        </div>
     </form>
     <h4>背景色</h4>
     <form id="background_color">
-        <label for="white">白
-            <input type="radio" name="background_color" value="white" id="white" checked>
-        </label>
-        <label for="black">黒
-            <input type="radio" name="background_color" value="black" id="black">
-        </label>
-        <label for="kinari">生成り
-            <input type="radio" name="background_color" value="kinari" id="kinari">
-        </label>
-        <label for="blue">水色
-            <input type="radio" name="background_color" value="blue" id="blue">
-        </label>
+        <div class="container">
+            <div class="selectbox"><input type="radio" name="background_color" value="white" id="white" checked><label for="white">白</label></div>
+            <div class="selectbox"><input type="radio" name="background_color" value="black" id="black"><label for="black">黒</label></div>
+            <div class="selectbox"><input type="radio" name="background_color" value="kinari" id="kinari"><label for="kinari">生成り</label></div>
+            <div class="selectbox"><input type="radio" name="background_color" value="blue" id="blue"><label for="blue">水色</label></div>
+        </div>
     </form>
     <h4>フォント</h4>
     <form id="font_style">
-        <label for="mincho">明朝
-            <input type="radio" name="font_style" value="mincho" id="mincho" checked>
-        </label>
-        <label for="gothic">ゴシック
-            <input type="radio" name="font_style" value="gothic" id="gothic">
-        </label>
+        <div class="container">
+            <div class="selectbox"><input type="radio" name="font_style" value="mincho" id="mincho" checked><label for="mincho">明朝</label></div>
+            <div class="selectbox"><input type="radio" name="font_style" value="gothic" id="gothic"><label for="gothic">ゴシック</label></div>
+        </div>
     </form>
     <br>
     <button id="save_data">保存する</button><span id="check"></span>

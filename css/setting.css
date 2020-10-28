@@ -1,3 +1,21 @@
+.container {
+    display: flex;
+}
+
 input {
     cursor: pointer;
+    display: none;
+}
+
+label {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input:checked+label {
+    border: solid 1px #0000ff;
 }
