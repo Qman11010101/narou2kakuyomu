@@ -1,6 +1,6 @@
 var undefined; // undefined保証
 
-function overwrite_css(file_path) {
+function append_css(file_path) {
     const link = document.createElement("link");
     const head = document.getElementsByTagName("head")[0];
     link.href = file_path;
@@ -22,7 +22,7 @@ browser.storage.sync.get(["font_style"], function (res) {
 });
 
 // 設定に依存しないCSS
-overwrite_css("./css/general.css")
+append_css("./css/general.css")
 
 // 文字サイズ
 const size_dir = "./css/size/";
@@ -37,7 +37,7 @@ switch (size) {
     case "huge":
         size_css = size_dir + "huge.css";
 }
-overwrite_css(size_css);
+append_css(size_css);
 
 // 背景色
 const bgcolor_dir = "./css/color/";
@@ -52,7 +52,7 @@ switch (bgcolor) {
     case "blue":
         bgcolor_css = bgcolor_dir + "blue.css";
 }
-overwrite_css(bgcolor_css);
+append_css(bgcolor_css);
 
 // フォント
 const font_dir = "./css/font/"
@@ -63,4 +63,4 @@ switch (font) {
     case "gothic":
         font_css = font_dir + "gothic.css";
 }
-overwrite_css(font_css);
+append_css(font_css);
