@@ -12,6 +12,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         browser.storage.sync.set(kvobj, check_pass());
     });
+    const gothicdiv = document.getElementById("gothicdiv");
+    gothicdiv.addEventListener("click", function () {
+        const label = document.getElementsByTagName("label");
+        for (let tag = 0; tag < label.length-2; tag++) { // 最後の2つが「明朝」「ゴシック」の選択肢であるためその手前で変更を止めることでなんとかしている。代償にこれ以上は下にlabelを入れられなくなった。丁寧にやるならifでid見るべきか？
+            label[tag].style.fontFamily = "'Helvetica Neue',Helvetica,Arial,'ヒラギノ角ゴ Pr6N','Hiragino Kaku Gothic Pr6N','ヒラギノ角ゴ ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','Segoe UI',Verdana,'メイリオ',Meiryo,sans-serif";
+        }
+    });
+    const minchodiv = document.getElementById("minchodiv");
+    minchodiv.addEventListener("click", function(){
+        const label = document.getElementsByTagName("label");
+        for (let tag = 0; tag < label.length-2; tag++) { // 同上
+            label[tag].style.fontFamily = "dcsymbols,'游明朝',YuMincho,'ヒラギノ明朝 Pr6N','Hiragino Mincho Pr6N','ヒラギノ明朝 ProN','Hiragino Mincho ProN','ヒラギノ明朝 StdN','Hiragino Mincho StdN',HiraMinProN-W3,'HGS明朝B','HG明朝B',dcsymbols,'Helvetica Neue',Helvetica,Arial,'ヒラギノ角ゴ Pr6N','Hiragino Kaku Gothic Pr6N','ヒラギノ角ゴ ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','Segoe UI',Verdana,'メイリオ',Meiryo,sans-serif"
+        }
+    })
 });
 
 function check_pass() {
