@@ -1,4 +1,4 @@
-var undefined; // undefined保証
+let undefined; // undefined保証
 
 function append_css(file_path) {
     const link = document.createElement("link");
@@ -27,7 +27,7 @@ append_css("./css/general.css")
 
 // 文字サイズ
 const size_dir = "./css/size/";
-var size_css;
+let size_css;
 switch (size) {
     case "small":
         size_css = size_dir + "small.css";
@@ -42,7 +42,7 @@ append_css(size_css);
 
 // 背景色
 const bgcolor_dir = "./css/color/";
-var bgcolor_css;
+let bgcolor_css;
 switch (bgcolor) {
     case "white":
         bgcolor_css = bgcolor_dir + "white.css";
@@ -57,7 +57,7 @@ append_css(bgcolor_css);
 
 // フォント
 const font_dir = "./css/font/"
-var font_css;
+let font_css;
 switch (font) {
     case "mincho":
         font_css = font_dir + "mincho.css";
