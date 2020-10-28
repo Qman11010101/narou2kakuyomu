@@ -16,7 +16,8 @@
             ],
             "css": [
                 "./css/general.css",
-                "./css/setting.css"
+                "./css/setting.css",
+                "./css/narou-kinari.css"
             ]
         }
     ],
