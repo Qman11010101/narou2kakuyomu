@@ -1,0 +1,9 @@
+:root {
+    --n2k-color-background: #DFECF4;
+    --n2k-color-transition: #C9DDEB;
+    --n2k-color-transition-hover: #B7D2E4;
+    --n2k-color-text: #262829;
+    --n2k-color-text-sub: #888888;
+    --n2k-color-link: #0081C2;
+    --n2k-color-shadow: rgba(0, 0, 0, .05);
+}
