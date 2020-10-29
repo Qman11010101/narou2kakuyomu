@@ -13,11 +13,6 @@
             ],
             "js": [
                 "apply_style.js"
-            ],
-            "css": [
-                "./css/general.css",
-                "./css/setting.css",
-                "./css/narou-kinari.css"
             ]
         }
     ],
@@ -29,6 +24,22 @@
     },
     "permissions": [
         "storage"
+    ],
+    "web_accessible_resources":[
+        "constant.css",
+        "css/button/display.css",
+        "css/button/hide.css",
+        "css/color/black.css",
+        "css/color/blue.css",
+        "css/color/kinari.css",
+        "css/color/white.css",
+        "css/size/small.css",
+        "css/size/medium.css",
+        "css/size/large.css",
+        "css/size/huge.css",
+        "css/font/mincho.css",
+        "css/font/gothic.css",
+        "finalize.css"
     ],
     "browser_specific_settings": {
         "gecko": {
