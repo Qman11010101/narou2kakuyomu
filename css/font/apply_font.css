@@ -9,3 +9,7 @@ body {
 .novel_subtitle {
     font-family: var(--n2k-font-gothic);
 }
+
+#pageBottom, #pageTop {
+    font-family: var(--n2k-font-gothic);
+}
