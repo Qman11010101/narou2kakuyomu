@@ -4,10 +4,19 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/setting.css">
+    <!-- <script src="pop_load.js"></script> -->
     <script src="save_data.js"></script>
 </head>
 
 <body>
+    <span class="setting-title">表示調整ボタン</span>
+    <form id="display_button">
+        <div class="container">
+            <div class="selectbox" id="displaydiv"><input type="radio" name="display_button" value="display" id="display"><label for="display">表示する</label></div>
+            <div class="selectbox" id="hidediv"><input type="radio" name="display_button" value="hide" id="hide" checked><label for="hide">表示しない</label></div>
+        </div>
+    </form>
+    <br>
     <span class="setting-title">文字サイズ</span>
     <form id="font_size">
         <div class="container">
