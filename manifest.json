@@ -1,8 +1,12 @@
 {
     "manifest_version": 2,
-    "name": "Narou2Kakuyomu",
-    "version": "0.1a",
-    "description": "小説家になろう上でカクヨムのデザインを再現する拡張機能",
+    "name": "__MSG_extensionName__",
+    "version": "1.0b",
+    "description": "__MSG_extensionDescription__",
+    "developer" : {
+        "name":"Kjuman Enobikto / kobi32768"
+    },
+    "default_locale":"ja",
     "icons": {
         "48": "icons/48.png"
     },

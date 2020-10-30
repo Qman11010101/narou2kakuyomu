@@ -1,0 +1,10 @@
+{
+    "extensionName" : {
+        "message" : "なろう to カクヨム",
+        "description" : "拡張機能名"
+    },
+    "extensionDescription" : {
+        "message" : "『小説家になろう』のデザインを『カクヨム』のように変化させます。",
+        "description" : "拡張機能説明"
+    }
+}

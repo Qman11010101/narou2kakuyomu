@@ -1,0 +1,10 @@
+{
+    "extensionName": {
+        "message": "Narou2Kakuyomu",
+        "description": "Extension name"
+    },
+    "extensionDescription": {
+        "message": "Changes the design of 'Syosetuka ni narou' to something like 'Kakuyomu'.",
+        "description": "Extension description"
+    }
+}
