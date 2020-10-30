@@ -45,10 +45,10 @@ a:hover, ul#head_nav li a:hover {
 #pageBottom, #pageTop {
     background: var(--n2k-color-transition);
     color: var(--n2k-color-text);
+    text-shadow: none;
 }
 
 #pageBottom:hover, #pageTop:hover {
     background: var(--n2k-color-transition-hover);
-    color: var(--n2k-color-text);
     text-decoration: none;
 }
