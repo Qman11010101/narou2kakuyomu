@@ -1,0 +1,36 @@
+html {
+    background: var(--n2k-color-background);
+}
+
+ul#head_nav li a {
+    color: var(--n2k-color-text-sub);
+}
+
+/* 上部メニューバー */
+#novel_header {
+    background: var(--n2k-color-background);
+    box-shadow: 0 1px 0 0 var(--n2k-color-shadow)
+}
+
+#novel_color {
+    color: var(--n2k-color-text);
+}
+
+#novel_contents {
+    background: var(--n2k-color-background);
+}
+
+a, a:visited {
+    color: var(--n2k-color-text);
+}
+
+/* 前後話ボタン */
+.novel_bn {
+    background: var(--n2k-color-transition);
+}
+
+/* 上部メニューバー、 タイトル, 作者, 章 */
+a:hover, ul#head_nav li a:hover {
+    color: var(--n2k-color-link);
+    text-decoration: underline;
+}
