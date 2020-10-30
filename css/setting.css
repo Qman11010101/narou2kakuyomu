@@ -76,6 +76,28 @@ input:checked+label {
     z-index: 1;
 }
 
+#save_data {
+    font-family: dcsymbols, 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pr6N', 'Hiragino Kaku Gothic Pr6N', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', 'Segoe UI', Verdana, 'メイリオ', Meiryo, sans-serif;
+    border: none;
+    background-color: #4baae0;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    transition-property: background-color;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#save_data:hover {
+    background-color: #0990cc;
+}
+
+#save_data:active {
+    box-shadow: 0 0 5px 0 #0990cc;
+}
+
 /*各セル固有の設定*/
 
 #smalldiv {
