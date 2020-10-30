@@ -81,7 +81,7 @@ input:checked+label {
     border: none;
     background-color: #4baae0;
     color: #fff;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 3px;
     transition-property: background-color;
     transition-duration: .1s;
