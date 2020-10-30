@@ -26,20 +26,19 @@
         "storage"
     ],
     "web_accessible_resources":[
-        "constant.css",
-        "css/button/display.css",
-        "css/button/hide.css",
         "css/color/black.css",
         "css/color/blue.css",
         "css/color/kinari.css",
         "css/color/white.css",
+        "css/color/apply_color.css",
         "css/size/small.css",
         "css/size/medium.css",
         "css/size/large.css",
         "css/size/huge.css",
+        "css/size/apply_size.css",
         "css/font/mincho.css",
         "css/font/gothic.css",
-        "finalize.css"
+        "css/font/apply_font.css"
     ],
     "browser_specific_settings": {
         "gecko": {
