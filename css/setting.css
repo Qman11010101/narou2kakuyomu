@@ -1,3 +1,84 @@
+body {
+    font-family: dcsymbols, '游明朝', YuMincho, 'ヒラギノ明朝 Pr6N', 'Hiragino Mincho Pr6N', 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', 'ヒラギノ明朝 StdN', 'Hiragino Mincho StdN', HiraMinProN-W3, 'HGS明朝B', 'HG明朝B', dcsymbols, 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pr6N', 'Hiragino Kaku Gothic Pr6N', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', 'Segoe UI', Verdana, 'メイリオ', Meiryo, sans-serif;
+    font-size: small;
+}
+
+.container {
+    display: flex;
+}
+
 input {
     cursor: pointer;
+    display: none;
+}
+
+.setting-title {
+    font-family: dcsymbols, 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pr6N', 'Hiragino Kaku Gothic Pr6N', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', 'Segoe UI', Verdana, 'メイリオ', Meiryo, sans-serif;
+}
+
+#check {
+    font-family: dcsymbols, 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pr6N', 'Hiragino Kaku Gothic Pr6N', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', 'Segoe UI', Verdana, 'メイリオ', Meiryo, sans-serif;
+}
+
+.selectbox {
+    margin-right: -1px;
+    flex: 1;
+}
+
+.container div:nth-of-type(1) label {
+    border-radius: 3px 0 0 3px;
+}
+
+.container div:nth-last-of-type(1) label {
+    border-radius: 0 3px 3px 0;
+}
+
+label {
+    min-width: 60px;
+    height: 40px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    flex: 1;
+    cursor: pointer;
+}
+
+input:hover+label {
+    border: 1px solid #222;
+    position: relative;
+    z-index: 1;
+}
+
+input:checked+label {
+    border: 1px solid #4baae0;
+    position: relative;
+    z-index: 1;
+}
+
+/*各セル固有の設定*/
+
+#smalldiv {
+    font-size: small;
+}
+
+#mediumdiv {
+    font-size: medium;
+}
+
+#largediv {
+    font-size: large;
+}
+
+#hugediv {
+    font-size: x-large;
+}
+
+#minchodiv {
+    font-family: dcsymbols, '游明朝', YuMincho, 'ヒラギノ明朝 Pr6N', 'Hiragino Mincho Pr6N', 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', 'ヒラギノ明朝 StdN', 'Hiragino Mincho StdN', HiraMinProN-W3, 'HGS明朝B', 'HG明朝B', dcsymbols, 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pr6N', 'Hiragino Kaku Gothic Pr6N', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', 'Segoe UI', Verdana, 'メイリオ', Meiryo, sans-serif;
+}
+
+#gothicdiv {
+    font-family: dcsymbols, 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pr6N', 'Hiragino Kaku Gothic Pr6N', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', 'Segoe UI', Verdana, 'メイリオ', Meiryo, sans-serif;
 }
