@@ -1,8 +1,9 @@
-html {
+html, #container, #novel_contents {
     background: var(--n2k-color-background);
 }
 
-ul#head_nav li a {
+ul#head_nav li, ul#head_nav li.booklist_now a {
+    background: var(--n2k-color-background);
     color: var(--n2k-color-text-sub);
 }
 
@@ -16,17 +17,22 @@ ul#head_nav li a {
     color: var(--n2k-color-text);
 }
 
-#novel_contents {
-    background: var(--n2k-color-background);
-}
-
 a, a:visited {
     color: var(--n2k-color-text);
+}
+
+.contents1 {
+    background: var(--n2k-color-background);
+    color: var(--n2k-color-text-sub)
 }
 
 /* 前後話ボタン */
 .novel_bn {
     background: var(--n2k-color-transition);
+}
+
+.novel_bn:hover {
+    background: var(--n2k-color-transition-hover);
 }
 
 /* 上部メニューバー、 タイトル, 作者, 章 */
