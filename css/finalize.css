@@ -1,0 +1,9 @@
+/* #表示調整ボタン */
+.toggle, .toggle_menuclose {
+    display: none;
+}
+
+/* 最下, 最上 変遷ボタン */
+#pageBottom, #pageTop {
+    visibility: hidden;
+}
