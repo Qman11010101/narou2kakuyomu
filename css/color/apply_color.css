@@ -40,3 +40,15 @@ a:hover, ul#head_nav li a:hover {
     color: var(--n2k-color-link);
     text-decoration: underline;
 }
+
+/* 最下, 最上 変遷ボタン */
+#pageBottom, #pageTop {
+    background: var(--n2k-color-transition);
+    color: var(--n2k-color-text);
+}
+
+#pageBottom:hover, #pageTop:hover {
+    background: var(--n2k-color-transition-hover);
+    color: var(--n2k-color-text);
+    text-decoration: none;
+}
