@@ -29,7 +29,7 @@ browser.storage.sync.get(["display_button"], function (res) {
 // 文字サイズ
 browser.storage.sync.get(["font_size"], function (res) {
     const rs = res.font_size;
-    size = (rs != undefined) ? rs : "middle"; // small, middle, large, huge
+    size = (rs != undefined) ? rs : "medium"; // small, medium, large, huge
     const size_dir = "./css/size/";
     const size_css = size_dir + size + ".css";
     append_css(size_css);
