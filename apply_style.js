@@ -14,6 +14,8 @@ for (let i = 0; i < novel_bn.length; i++) {
     novel_bn[i].id = id_list[i];
 }
 
+append_css("css/general.css");
+
 // 文字サイズ・背景色・フォントをsyncストレージから取得する
 // undefinedならデフォルト値が代入される
 
