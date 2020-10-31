@@ -6,6 +6,10 @@ body {
     font-family: var(--n2k-font-gothic);
 }
 
+.novel_bn a {
+    font-family: var(--n2k-font-gothic);
+}
+
 .novel_subtitle {
     font-family: var(--n2k-font-gothic);
 }
