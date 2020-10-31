@@ -1,3 +1,7 @@
+html {
+    background: #F2F2F0;
+}
+
 body {
     font-family: dcsymbols, '游明朝', YuMincho, 'ヒラギノ明朝 Pr6N', 'Hiragino Mincho Pr6N', 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', 'ヒラギノ明朝 StdN', 'Hiragino Mincho StdN', HiraMinProN-W3, 'HGS明朝B', 'HG明朝B', dcsymbols, 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pr6N', 'Hiragino Kaku Gothic Pr6N', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', 'Segoe UI', Verdana, 'メイリオ', Meiryo, sans-serif;
     color: #292826;
@@ -34,12 +38,6 @@ input {
 #display_button, #font_size, #background_color, #font_style {
     margin: 3.75px 0 7.5px;
 }
-
-/*footer {*/
-/*    display: flex;*/
-/*    padding: 15px 16px;*/
-/*    */
-/*}*/
 
 #check {
     font-family: dcsymbols, 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pr6N', 'Hiragino Kaku Gothic Pr6N', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', 'Segoe UI', Verdana, 'メイリオ', Meiryo, sans-serif;
