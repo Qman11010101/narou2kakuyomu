@@ -11,15 +11,6 @@
     overflow-wrap: break-word;
 }
 
-/* 前後話ボタン */
-.novel_bn {
-    writing-mode: horizontal-tb;
-    display: block;
-    padding: 13px 10px;
-    font-size: .9em;
-    line-height: 1.3;
-}
-
 .novel_subtitle {
     font-size: 1.75em;
     line-height: 1.3em;

@@ -29,9 +29,15 @@ a, a:visited {
 /* 前後話ボタン */
 .novel_bn {
     background: var(--n2k-color-transition);
+    color: var(--n2k-color-text);
 }
 
-.novel_bn:hover {
+/* FIXME */
+.novel_bn a {
+    color: var(--n2k-color-text);
+}
+
+.novel_bn a:hover {
     background: var(--n2k-color-transition-hover);
 }
 
