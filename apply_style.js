@@ -7,6 +7,12 @@ function append_css(file_path) {
     head.appendChild(link);
 }
 
+// 目次/前へ/次へボタンにID付与していじりやすくする
+let novel_bn = document.querySelectorAll(".novel_bn a");
+const id_list = ["upper_back", "upper_next", "lower_back", "lower_next", "table_contents"]
+for (let i=0; i<novel_bn.length; i++){
+    novel_bn[i].id = id_list[i];
+}
 
 // 文字サイズ・背景色・フォントをsyncストレージから取得する
 // undefinedならデフォルト値が代入される
