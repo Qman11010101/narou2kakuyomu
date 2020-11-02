@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "__MSG_extensionName__",
-    "version": "1.0b",
+    "version": "1.0",
     "description": "__MSG_extensionDescription__",
     "developer" : {
         "name":"Kjuman Enobikto / kobi32768"
@@ -30,6 +30,7 @@
         "storage"
     ],
     "web_accessible_resources":[
+        "css/general.css",
         "css/color/black.css",
         "css/color/blue.css",
         "css/color/kinari.css",
@@ -47,7 +48,7 @@
     "browser_specific_settings": {
         "gecko": {
             "id":"{CAAAB3FF-7DFF-4EC0-8735-AC03C1542721}",
-            "strict_min_version": "42.0"
+            "strict_min_version": "57.0"
         }
     }
 }
