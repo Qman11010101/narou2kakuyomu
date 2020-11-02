@@ -7,10 +7,14 @@ ul#head_nav li, ul#head_nav li.booklist_now a {
     color: var(--n2k-color-text-sub);
 }
 
+ul#head_nav li a:hover {
+    background: var(--n2k-color-background);
+}
+
 /* 上部メニューバー */
 #novel_header {
     background: var(--n2k-color-background);
-    box-shadow: 0 1px 0 0 var(--n2k-color-shadow)
+    box-shadow: 0 1px 0 0 var(--n2k-color-shadow);
 }
 
 #novel_color {
