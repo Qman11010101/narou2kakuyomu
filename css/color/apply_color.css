@@ -2,6 +2,7 @@ html, #container, #novel_contents {
     background: var(--n2k-color-background);
 }
 
+/* 上部メニューバー、 タイトル, 作者, 章 */
 ul#head_nav li, ul#head_nav li.booklist_now a {
     background: var(--n2k-color-background);
     color: var(--n2k-color-text-sub);
@@ -9,6 +10,8 @@ ul#head_nav li, ul#head_nav li.booklist_now a {
 
 ul#head_nav li a:hover {
     background: var(--n2k-color-background);
+    color: var(--n2k-color-link);
+    text-decoration: underline;
 }
 
 /* 上部メニューバー */
@@ -23,6 +26,11 @@ ul#head_nav li a:hover {
 
 a, a:visited {
     color: var(--n2k-color-text);
+}
+
+a:hover {
+    color: var(--n2k-color-link);
+    text-decoration: underline;
 }
 
 .contents1 {
@@ -62,10 +70,14 @@ a, a:visited {
     color: var(--n2k-color-link) !important;
 }
 
-/* 上部メニューバー、 タイトル, 作者, 章 */
-a:hover, ul#head_nav li a:hover {
-    color: var(--n2k-color-link);
-    text-decoration: underline;
+.p-novelpoint-form {
+    background: var(--n2k-color-background);
+    color: var(--n2k-color-text) !important;
+    border: 2px solid var(--n2k-color-shadow)
+}
+
+.p-novelpoint-form a {
+    color: var(--n2k-color-link) !important;
 }
 
 /* 最下, 最上 変遷ボタン */
