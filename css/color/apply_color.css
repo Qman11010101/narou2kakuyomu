@@ -34,6 +34,7 @@ a, a:visited {
 
 .novel_bn a {
     color: var(--n2k-color-text);
+    border: 1px solid var(--n2k-color-transition-hover);
 }
 
 .novel_bn a:hover {
@@ -52,6 +53,7 @@ a:hover, ul#head_nav li a:hover {
 #pageBottom, #pageTop {
     background: var(--n2k-color-transition);
     color: var(--n2k-color-text);
+    border: 1px solid var(--n2k-color-transition-hover);
     text-shadow: none;
 }
 
