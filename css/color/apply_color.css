@@ -73,11 +73,61 @@ a:hover {
 .p-novelpoint-form {
     background: var(--n2k-color-background);
     color: var(--n2k-color-text) !important;
-    border: 2px solid var(--n2k-color-shadow)
+    border: 2px solid var(--n2k-color-transition-hover);
 }
 
 .p-novelpoint-form a {
     color: var(--n2k-color-link) !important;
+}
+
+#impression {
+    background: var(--n2k-color-background);
+    color: var(--n2k-color-text);
+    border: 2px solid var(--n2k-color-transition-hover);
+}
+
+#novel_contents #impression a,
+#novel_contents #review a,
+#novel_contents #novel_hyouka a {
+    color: var(--n2k-color-link);
+}
+
+#novel_contents #impression a:visited,
+#novel_contents #review a:visited,
+#novel_contents #novel_hyouka a:visited {
+    color: var(--n2k-color-link);
+}
+
+#impression textarea {
+    background: var(--n2k-color-background);
+    color: var(--n2k-color-text);
+    border: 1px solid var(--n2k-color-transition-hover);
+}
+
+.novelreport_attention {
+    color: #FF5555;
+}
+
+.button {
+    background: var(--n2k-color-transition);
+    color: var(--n2k-color-text);
+    border: 2px solid var(--n2k-color-transition-hover);
+}
+
+.button:hover {
+    background: var(--n2k-color-transition-hover);
+    color: var(--n2k-color-text);
+    border: 2px solid var(--n2k-color-transition-hover);
+}
+
+#novel_attention {
+    background: var(--n2k-color-background);
+    color: var(--n2k-color-text);
+    border: 5px solid var(--n2k-color-transition-hover);
+}
+
+.attention {
+    color: #ff5555;
 }
 
 /* 最下, 最上 変遷ボタン */
