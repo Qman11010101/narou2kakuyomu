@@ -168,5 +168,6 @@ a:hover {
 
 #pageBottom:hover, #pageTop:hover {
     background: var(--n2k-color-transition-hover);
+    color: var(--n2k-color-text);
     text-decoration: none;
 }
