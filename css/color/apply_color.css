@@ -1,4 +1,4 @@
-html, #container, #novel_contents {
+html, body, #container, #novel_contents {
     background: var(--n2k-color-background);
 }
 
@@ -128,6 +128,21 @@ a:hover {
 
 .attention {
     color: #ff5555;
+}
+
+#footer {
+    background: var(--n2k-color-background);
+    color: var(--n2k-color-text);
+    border-top: 1px solid var(--n2k-color-shadow);
+}
+
+#footer .undernavi a,
+#footer .undernavi a:visited {
+    color: var(--n2k-color-text-sub);
+}
+
+#footer .undernavi a:hover {
+    color: var(--n2k-color-link)
 }
 
 /* 最下, 最上 変遷ボタン */
