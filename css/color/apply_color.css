@@ -145,6 +145,19 @@ a:hover {
     color: var(--n2k-color-link)
 }
 
+#search input[type="text"] {
+    background: var(--n2k-color-background);
+    color: var(--n2k-color-text);
+    border: 2px inset var(--n2k-color-transition-hover);
+}
+
+#search input[type="submit"] {
+    background: var(--n2k-color-background);
+    color: var(--n2k-color-text);
+    border: 1px solid var(--n2k-color-transition-hover);
+    padding: 3px;
+}
+
 /* 最下, 最上 変遷ボタン */
 #pageBottom, #pageTop {
     background: var(--n2k-color-transition);
