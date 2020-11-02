@@ -47,6 +47,21 @@ a, a:visited {
     text-decoration: none;
 }
 
+.wrap_menu_novelview_after, .footerbookmark li.booklist_now a {
+    background: var(--n2k-color-background);
+    color: var(--n2k-color-text-sub);
+}
+
+.wrap_menu_novelview_after {
+    border-top: 1px solid var(--n2k-color-shadow);
+    border-bottom: 1px solid var(--n2k-color-shadow);
+}
+
+.list_menu_novelview_after a:hover, .footerbookmark li a:hover {
+    background: var(--n2k-color-background);
+    color: var(--n2k-color-link) !important;
+}
+
 /* 上部メニューバー、 タイトル, 作者, 章 */
 a:hover, ul#head_nav li a:hover {
     color: var(--n2k-color-link);
