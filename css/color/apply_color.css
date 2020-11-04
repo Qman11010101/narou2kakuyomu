@@ -1,3 +1,4 @@
+/* Viewer */
 html, body, #container, #novel_contents {
     background: var(--n2k-color-background);
 }
@@ -170,4 +171,8 @@ a:hover {
     background: var(--n2k-color-transition-hover);
     color: var(--n2k-color-text);
     text-decoration: none;
+}
+
+div.chapter_title {
+    color: #888;
 }
