@@ -17,3 +17,32 @@
     font-weight: 400;
     margin: 32px auto 60px;
 }
+
+div.chapter_title {
+    line-height: 1.2;
+    font-size: 35px;
+    font-weight: 400;
+    color: #888;
+    padding: 0;
+    margin: 70px 0 12.25px;
+}
+
+div.chapter_title:nth-of-type(1) {
+    margin: 30px 0 12.25px
+}
+
+dl.novel_sublist2 {
+    font-size: 15.4px !important;
+    border: none;
+}
+
+dl.novel_sublist2 dd,
+dl.novel_sublist2 dt {
+    padding: 3px 0;
+    font-size: 100% !important;
+    height: 23.1px;
+}
+
+dl.novel_sublist2 dd a:hover {
+    text-decoration: none;
+}
