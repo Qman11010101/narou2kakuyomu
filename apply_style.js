@@ -20,7 +20,7 @@ append_css("css/general.css");
 // undefinedならデフォルト値が代入される
 
 // 表示調整ボタン
-let disp, size, bgcolor, font;
+let disp, dispap, size, bgcolor, font;
 browser.storage.sync.get(["display_button"], function (res) {
     const rd = res.display_button;
     disp = (rd != undefined) ? rd : "hide"; // display, hide
@@ -34,11 +34,20 @@ browser.storage.sync.get(["display_button"], function (res) {
     }
 });
 
+// 前書き・後書き
+browser.storage.sync.get(["display_pref_post"], function (res) {
+    const rds = res.display_pref_post;
+    dispap = (rds != undefined) ? rds: "hide"; // display, hide
+    const dispap_dir = "css/disp_script/";
+    const dispap_css = dispap_dir + dispap + ".css";
+    append_css(dispap_css);
+});
+
 // 文字サイズ
 browser.storage.sync.get(["font_size"], function (res) {
     const rs = res.font_size;
     size = (rs === undefined) ? "medium" : rs; // small, medium, large, huge
-    const size_dir = "./css/size/";
+    const size_dir = "css/size/";
     const size_css = size_dir + size + ".css";
     append_css(size_css);
     append_css(size_dir + "apply_size.css");
