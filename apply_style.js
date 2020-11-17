@@ -18,9 +18,9 @@ function isFirstStory(novel_no) {
 // 目次/前へ/次へボタンにID付与していじりやすくする
 let novel_bn = document.querySelectorAll(".novel_bn a");
 let id_list = []
-if (isFirstStory(document.getElementById("novel_no").innerText)){
+if (isFirstStory(document.getElementById("novel_no").innerText)) {
     id_list = ["upper_next", "lower_next", "table_contents"]
-}else{
+} else {
     id_list = ["upper_back", "upper_next", "lower_back", "lower_next", "table_contents"]
 }
 for (let i = 0; i < novel_bn.length; i++) {
