@@ -7,13 +7,27 @@ function append_css(file_path) {
     head.appendChild(link);
 }
 
+function isFirstStory(novel_no) {
+    if (novel_no.startsWith("1/")) {
+        return true
+    } else {
+        return false
+    }
+}
+
 // 目次/前へ/次へボタンにID付与していじりやすくする
 let novel_bn = document.querySelectorAll(".novel_bn a");
-const id_list = ["upper_back", "upper_next", "lower_back", "lower_next", "table_contents"]
+let id_list = []
+if (isFirstStory(document.getElementById("novel_no").innerText)){
+    id_list = ["upper_next", "lower_next", "table_contents"]
+}else{
+    id_list = ["upper_back", "upper_next", "lower_back", "lower_next", "table_contents"]
+}
 for (let i = 0; i < novel_bn.length; i++) {
     novel_bn[i].id = id_list[i];
 }
 
+isFirstStory(document.getElementById("novel_no").innerText);
 append_css("css/general.css");
 
 // 文字サイズ・背景色・フォントをsyncストレージから取得する
@@ -37,7 +51,7 @@ browser.storage.sync.get(["display_button"], function (res) {
 // 前書き・後書き
 browser.storage.sync.get(["display_pref_post"], function (res) {
     const rds = res.display_pref_post;
-    dispap = (rds != undefined) ? rds: "hide"; // display, hide
+    dispap = (rds != undefined) ? rds : "hide"; // display, hide
     const dispap_dir = "css/disp_script/";
     const dispap_css = dispap_dir + dispap + ".css";
     append_css(dispap_css);
