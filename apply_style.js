@@ -15,19 +15,6 @@ function isFirstStory(novel_no) {
     }
 }
 
-// 目次/前へ/次へボタンにID付与していじりやすくする
-let novel_bn = document.querySelectorAll(".novel_bn a");
-let id_list = []
-if (isFirstStory(document.getElementById("novel_no").innerText)) {
-    id_list = ["upper_next", "lower_next", "table_contents"]
-} else {
-    id_list = ["upper_back", "upper_next", "lower_back", "lower_next", "table_contents"]
-}
-for (let i = 0; i < novel_bn.length; i++) {
-    novel_bn[i].id = id_list[i];
-}
-
-isFirstStory(document.getElementById("novel_no").innerText);
 append_css("css/general.css");
 
 // 文字サイズ・背景色・フォントをsyncストレージから取得する
@@ -86,3 +73,17 @@ browser.storage.sync.get(["font_style"], function (res) {
     append_css(font_css);
     append_css(font_dir + "apply_font.css");
 });
+
+// 目次/前へ/次へボタンにID付与していじりやすくする
+let novel_bn = document.querySelectorAll(".novel_bn a");
+let id_list = []
+if (isFirstStory(document.getElementById("novel_no").innerText)) {
+    id_list = ["upper_next", "lower_next", "table_contents"]
+} else {
+    id_list = ["upper_back", "upper_next", "lower_back", "lower_next", "table_contents"]
+}
+for (let i = 0; i < novel_bn.length; i++) {
+    novel_bn[i].id = id_list[i];
+}
+
+isFirstStory(document.getElementById("novel_no").innerText);
