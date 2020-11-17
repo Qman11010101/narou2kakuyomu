@@ -19,6 +19,14 @@
         </div>
     </form>
 
+    <span class="setting-title">前書き・後書き</span>
+    <form id="display_pref_post">
+        <div class="container">
+            <div class="selectbox" id="dispscriptdiv"><input type=radio name="display_pref_post" value="display" id="displayscript" checked><label for="displayscript">表示する</label></div>
+            <div class="selectbox" id="hidescriptdiv"><input type=radio name="display_pref_post" value="hide" id="hidescript"><label for="hidescript">表示しない</label></div>
+        </div>
+    </form>
+
     <span class="setting-title">文字サイズ</span>
     <form id="font_size">
         <div class="container">
@@ -46,7 +54,7 @@
             <div class="selectbox" id="gothicdiv"><input type="radio" name="font_style" value="gothic" id="gothic"><label for="gothic">ゴシック</label></div>
         </div>
     </form>
-    
+
     <footer>
         <span id="check"></span>
         <button id="save_data">保存</button>
