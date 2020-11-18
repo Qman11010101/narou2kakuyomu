@@ -85,5 +85,3 @@ if (isFirstStory(document.getElementById("novel_no").innerText)) {
 for (let i = 0; i < novel_bn.length; i++) {
     novel_bn[i].id = id_list[i];
 }
-
-isFirstStory(document.getElementById("novel_no").innerText);
