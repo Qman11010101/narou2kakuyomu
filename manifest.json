@@ -37,6 +37,8 @@
         "css/color/kinari.css",
         "css/color/white.css",
         "css/color/apply_color.css",
+        "css/disp_script/display.css",
+        "css/disp_script/hide.css",
         "css/size/small.css",
         "css/size/medium.css",
         "css/size/large.css",

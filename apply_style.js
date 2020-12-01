@@ -7,11 +7,12 @@ function append_css(file_path) {
     head.appendChild(link);
 }
 
-// 目次/前へ/次へボタンにID付与していじりやすくする
-let novel_bn = document.querySelectorAll(".novel_bn a");
-const id_list = ["upper_back", "upper_next", "lower_back", "lower_next", "table_contents"]
-for (let i = 0; i < novel_bn.length; i++) {
-    novel_bn[i].id = id_list[i];
+function isFirstStory(novel_no) {
+    if (novel_no.startsWith("1/")) {
+        return true
+    } else {
+        return false
+    }
 }
 
 append_css("css/general.css");
@@ -20,7 +21,7 @@ append_css("css/general.css");
 // undefinedならデフォルト値が代入される
 
 // 表示調整ボタン
-let disp, size, bgcolor, font;
+let disp, dispap, size, bgcolor, font;
 browser.storage.sync.get(["display_button"], function (res) {
     const rd = res.display_button;
     disp = (rd != undefined) ? rd : "hide"; // display, hide
@@ -34,11 +35,20 @@ browser.storage.sync.get(["display_button"], function (res) {
     }
 });
 
+// 前書き・後書き
+browser.storage.sync.get(["display_pref_post"], function (res) {
+    const rds = res.display_pref_post;
+    dispap = (rds != undefined) ? rds : "hide"; // display, hide
+    const dispap_dir = "css/disp_script/";
+    const dispap_css = dispap_dir + dispap + ".css";
+    append_css(dispap_css);
+});
+
 // 文字サイズ
 browser.storage.sync.get(["font_size"], function (res) {
     const rs = res.font_size;
     size = (rs === undefined) ? "medium" : rs; // small, medium, large, huge
-    const size_dir = "./css/size/";
+    const size_dir = "css/size/";
     const size_css = size_dir + size + ".css";
     append_css(size_css);
     append_css(size_dir + "apply_size.css");
@@ -63,3 +73,15 @@ browser.storage.sync.get(["font_style"], function (res) {
     append_css(font_css);
     append_css(font_dir + "apply_font.css");
 });
+
+// 目次/前へ/次へボタンにID付与していじりやすくする
+let novel_bn = document.querySelectorAll(".novel_bn a");
+let id_list = []
+if (isFirstStory(document.getElementById("novel_no").innerText)) {
+    id_list = ["upper_next", "lower_next", "table_contents"]
+} else {
+    id_list = ["upper_back", "upper_next", "lower_back", "lower_next", "table_contents"]
+}
+for (let i = 0; i < novel_bn.length; i++) {
+    novel_bn[i].id = id_list[i];
+}

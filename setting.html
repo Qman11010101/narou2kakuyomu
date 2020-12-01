@@ -8,8 +8,9 @@
     <script src="save_data.js"></script>
 </head>
 
-<body>
+<body><!--TODO:まえがき・あとがき非表示設定-->
     <header class="header">ビューワー設定</header>
+
     <span class="setting-title">表示調整ボタン</span>
     <form id="display_button">
         <div class="container">
@@ -17,6 +18,15 @@
             <div class="selectbox" id="hidediv"><input type="radio" name="display_button" value="hide" id="hide" checked><label for="hide">表示しない</label></div>
         </div>
     </form>
+
+    <span class="setting-title">前書き・後書き</span>
+    <form id="display_pref_post">
+        <div class="container">
+            <div class="selectbox" id="dispscriptdiv"><input type=radio name="display_pref_post" value="display" id="displayscript" checked><label for="displayscript">表示する</label></div>
+            <div class="selectbox" id="hidescriptdiv"><input type=radio name="display_pref_post" value="hide" id="hidescript"><label for="hidescript">表示しない</label></div>
+        </div>
+    </form>
+
     <span class="setting-title">文字サイズ</span>
     <form id="font_size">
         <div class="container">
@@ -26,6 +36,7 @@
             <div class="selectbox" id="hugediv"><input type="radio" name="font_size" value="huge" id="huge"><label for="huge">特大</label></div>
         </div>
     </form>
+
     <span class="setting-title">背景色</span>
     <form id="background_color">
         <div class="container">
@@ -35,6 +46,7 @@
             <div class="selectbox" id="bluediv"><input type="radio" name="background_color" value="blue" id="blue"><label for="blue">水色</label></div>
         </div>
     </form>
+
     <span class="setting-title">フォント</span>
     <form id="font_style">
         <div class="container">
@@ -42,6 +54,7 @@
             <div class="selectbox" id="gothicdiv"><input type="radio" name="font_style" value="gothic" id="gothic"><label for="gothic">ゴシック</label></div>
         </div>
     </form>
+
     <footer>
         <span id="check"></span>
         <button id="save_data">保存</button>

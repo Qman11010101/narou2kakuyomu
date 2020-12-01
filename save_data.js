@@ -2,11 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const save_data = document.getElementById("save_data");
     save_data.addEventListener("click", function () {
         const disp = document.getElementById("display_button").display_button.value;
+        const scri = document.getElementById("display_pref_post").display_pref_post.value;
         const size = document.getElementById("font_size").font_size.value;
         const bgcl = document.getElementById("background_color").background_color.value;
         const font = document.getElementById("font_style").font_style.value;
         const kvobj = {
             display_button: disp,
+            display_pref_post: scri,
             font_size: size,
             background_color: bgcl,
             font_style: font
