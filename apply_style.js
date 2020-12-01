@@ -8,11 +8,7 @@ function append_css(file_path) {
 }
 
 function isFirstStory(novel_no) {
-    if (novel_no.startsWith("1/")) {
-        return true
-    } else {
-        return false
-    }
+    return novel_no.startsWith("1/");
 }
 
 append_css("css/general.css");
