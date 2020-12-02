@@ -31,28 +31,46 @@ document.addEventListener("DOMContentLoaded", function () {
             const rd = res.display_button;
             disp = (rd != undefined) ? rd : "hide"; // display, hide
             for (let i = 0; i < disp_elements.length; i++) {
-                //alert(disp_elements[i].value);
+                if (disp_elements[i].id == disp) {
+                    disp_elements[i].checked = true;
+                }
             }
         });
         browser.storage.sync.get(["display_pref_post"], function (res) {
             const rds = res.display_pref_post;
             scri = (rds != undefined) ? rds : "hide"; // display, hide
-
+            for (let i = 0; i < scri_elements.length; i++) {
+                if (scri_elements[i].id == scri) {
+                    scri_elements[i].checked = true;
+                }
+            }
         });
         browser.storage.sync.get(["font_size"], function (res) {
             const rs = res.font_size;
             size = (rs === undefined) ? "medium" : rs; // small, medium, large, huge
-
+            for (let i = 0; i < size_elements.length; i++) {
+                if (size_elements[i].id == size) {
+                    size_elements[i].checked = true;
+                }
+            }
         });
         browser.storage.sync.get(["background_color"], function (res) {
             const rb = res.background_color;
             bgcl = (rb === undefined) ? "white" : rb; // white, black, kinari, blue
-
+            for (let i = 0; i < bgcl_elements.length; i++) {
+                if (bgcl_elements[i].id == bgcl) {
+                    bgcl_elements[i].checked = true;
+                }
+            }
         });
         browser.storage.sync.get(["font_style"], function (res) {
             const rf = res.font_style;
             font = (rf === undefined) ? "mincho" : rf; // mincho, gothic
-
+            for (let i = 0; i < font_elements.length; i++) {
+                if (font_elements[i].id == font) {
+                    font_elements[i].checked = true;
+                }
+            }
         });
     });
     // フォント変更適用
