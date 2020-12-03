@@ -85,15 +85,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-function conv_font(font_name){
+function conv_font(font_name) {
     const label = document.getElementsByTagName("label");
     const mincho_family = "'游明朝',YuMincho,'ヒラギノ明朝 Pr6N','Hiragino Mincho Pr6N','ヒラギノ明朝 ProN','Hiragino Mincho ProN','ヒラギノ明朝 StdN','Hiragino Mincho StdN',HiraMinProN-W3,'HGS明朝B','HG明朝B',dcsymbols,'Helvetica Neue',Helvetica,Arial,'ヒラギノ角ゴ Pr6N','Hiragino Kaku Gothic Pr6N','ヒラギノ角ゴ ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','Segoe UI',Verdana,'メイリオ',Meiryo,sans-serif";
     const gothic_family = "'Helvetica Neue',Helvetica,Arial,'ヒラギノ角ゴ Pr6N','Hiragino Kaku Gothic Pr6N','ヒラギノ角ゴ ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','Segoe UI',Verdana,'メイリオ',Meiryo,sans-serif";
     for (let tag = 0; tag < label.length - 2; tag++) {
         let font_name_temp;
-        if (font_name == "mincho"){
+        if (font_name == "mincho") {
             font_name_temp = mincho_family;
-        }else if(font_name == "gothic"){
+        } else if (font_name == "gothic") {
             font_name_temp = gothic_family;
         }
         label[tag].style.fontFamily = font_name_temp;
