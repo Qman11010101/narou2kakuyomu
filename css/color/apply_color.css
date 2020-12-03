@@ -1,23 +1,23 @@
 /* Viewer */
 html, body, #container, #novel_contents {
-    background: var(--n2k-color-background);
+    background: var(--n2k-background);
 }
 
 /* 上部メニューバー、 タイトル, 作者, 章 */
 ul#head_nav li, ul#head_nav li.booklist_now a {
-    background: var(--n2k-color-background);
+    background: var(--n2k-background);
     color: var(--n2k-color-text-sub);
 }
 
 ul#head_nav li a:hover {
-    background: var(--n2k-color-background);
+    background: var(--n2k-background);
     color: var(--n2k-color-link);
     text-decoration: underline;
 }
 
 /* 上部メニューバー */
 #novel_header {
-    background: var(--n2k-color-background);
+    background: var(--n2k-background);
     box-shadow: 0 1px 0 0 var(--n2k-color-shadow);
 }
 
@@ -35,29 +35,29 @@ a:hover {
 }
 
 .contents1 {
-    background: var(--n2k-color-background);
+    background: var(--n2k-background);
     color: var(--n2k-color-text-sub)
 }
 
 /* 前後話ボタン */
 .novel_bn {
-    background: var(--n2k-color-transition);
+    background: var(--n2k-background-accent);
     color: var(--n2k-color-text);
 }
 
 .novel_bn a {
     color: var(--n2k-color-text);
-    border: 1px solid var(--n2k-color-transition-hover);
+    border: 1px solid var(--n2k-background-accent-sub);
 }
 
 .novel_bn a:hover {
     color: var(--n2k-color-text);
-    background: var(--n2k-color-transition-hover);
+    background: var(--n2k-background-accent-sub);
     text-decoration: none;
 }
 
 .wrap_menu_novelview_after, .footerbookmark li.booklist_now a {
-    background: var(--n2k-color-background);
+    background: var(--n2k-background);
     color: var(--n2k-color-text-sub);
 }
 
@@ -67,14 +67,14 @@ a:hover {
 }
 
 .list_menu_novelview_after a:hover, .footerbookmark li a:hover {
-    background: var(--n2k-color-background);
+    background: var(--n2k-background);
     color: var(--n2k-color-link) !important;
 }
 
 .p-novelpoint-form {
-    background: var(--n2k-color-background);
+    background: var(--n2k-background);
     color: var(--n2k-color-text) !important;
-    border: 2px solid var(--n2k-color-transition-hover);
+    border: 2px solid var(--n2k-background-accent-sub);
 }
 
 .p-novelpoint-form a {
@@ -82,9 +82,9 @@ a:hover {
 }
 
 #impression {
-    background: var(--n2k-color-background);
+    background: var(--n2k-background);
     color: var(--n2k-color-text);
-    border: 2px solid var(--n2k-color-transition-hover);
+    border: 2px solid var(--n2k-background-accent-sub);
 }
 
 #novel_contents #impression a,
@@ -100,9 +100,9 @@ a:hover {
 }
 
 #impression textarea {
-    background: var(--n2k-color-background);
+    background: var(--n2k-background);
     color: var(--n2k-color-text);
-    border: 1px solid var(--n2k-color-transition-hover);
+    border: 1px solid var(--n2k-background-accent-sub);
 }
 
 .novelreport_attention {
@@ -110,21 +110,21 @@ a:hover {
 }
 
 .button {
-    background: var(--n2k-color-transition);
+    background: var(--n2k-background-accent);
     color: var(--n2k-color-text);
-    border: 2px solid var(--n2k-color-transition-hover);
+    border: 2px solid var(--n2k-background-accent-sub);
 }
 
 .button:hover {
-    background: var(--n2k-color-transition-hover);
+    background: var(--n2k-background-accent-sub);
     color: var(--n2k-color-text);
-    border: 2px solid var(--n2k-color-transition-hover);
+    border: 2px solid var(--n2k-background-accent-sub);
 }
 
 #novel_attention {
-    background: var(--n2k-color-background);
+    background: var(--n2k-background);
     color: var(--n2k-color-text);
-    border: 5px solid var(--n2k-color-transition-hover);
+    border: 5px solid var(--n2k-background-accent-sub);
 }
 
 .attention {
@@ -132,7 +132,7 @@ a:hover {
 }
 
 #footer {
-    background: var(--n2k-color-background);
+    background: var(--n2k-background);
     color: var(--n2k-color-text);
     border-top: 1px solid var(--n2k-color-shadow);
 }
@@ -147,28 +147,28 @@ a:hover {
 }
 
 #search input[type="text"] {
-    background: var(--n2k-color-background);
+    background: var(--n2k-background);
     color: var(--n2k-color-text);
-    border: 2px inset var(--n2k-color-transition-hover);
+    border: 2px inset var(--n2k-background-accent-sub);
 }
 
 #search input[type="submit"] {
-    background: var(--n2k-color-background);
+    background: var(--n2k-background);
     color: var(--n2k-color-text);
-    border: 1px solid var(--n2k-color-transition-hover);
+    border: 1px solid var(--n2k-background-accent-sub);
     padding: 3px;
 }
 
 /* 最下, 最上 変遷ボタン */
 #pageBottom, #pageTop {
-    background: var(--n2k-color-transition);
+    background: var(--n2k-background-accent);
     color: var(--n2k-color-text);
-    border: 1px solid var(--n2k-color-transition-hover);
+    border: 1px solid var(--n2k-background-accent-sub);
     text-shadow: none;
 }
 
 #pageBottom:hover, #pageTop:hover {
-    background: var(--n2k-color-transition-hover);
+    background: var(--n2k-background-accent-sub);
     color: var(--n2k-color-text);
     text-decoration: none;
 }
