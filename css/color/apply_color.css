@@ -205,10 +205,12 @@ div.chapter_title {
 
 dl.novel_sublist2 {
     color: var(--n2k-color-text);
+    margin-bottom: 1px;
 }
 
 dl.novel_sublist2:hover{
     border-bottom: 1px solid #99ddff;
+    margin-bottom: 0;
 }
 
 dl.novel_sublist2 a:hover {
