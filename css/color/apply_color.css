@@ -171,6 +171,11 @@ a:hover {
     text-shadow: none;
 }
 
+#pageBottom {
+    width: 17px;
+    text-align: center;
+}
+
 #pageBottom:hover, #pageTop:hover {
     background: var(--n2k-background-accent-sub);
     color: var(--n2k-color-text);
