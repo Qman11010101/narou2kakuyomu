@@ -21,11 +21,8 @@ ul#head_nav li a:hover {
     box-shadow: 0 1px 0 0 var(--n2k-color-shadow);
 }
 
-#novel_color {
-    color: var(--n2k-color-text);
-}
-
-a, a:visited {
+#novel_color,
+a, a:visited{
     color: var(--n2k-color-text);
 }
 
@@ -34,9 +31,14 @@ a:hover {
     text-decoration: underline;
 }
 
+.more,
+.novel_writername {
+    color: var(--n2k-color-text-sub);
+}
+
 .contents1 {
     background: var(--n2k-background);
-    color: var(--n2k-color-text-sub)
+    color: var(--n2k-color-text-sub);
 }
 
 /* 前後話ボタン */
@@ -137,26 +139,28 @@ a:hover {
     border-top: 1px solid var(--n2k-color-shadow);
 }
 
-#footer .undernavi a,
-#footer .undernavi a:visited {
+#novel_footer .undernavi a,
+#novel_footer .undernavi a:visited,
+#footer       .undernavi a,
+#footer       .undernavi a:visited{
     color: var(--n2k-color-text-sub);
 }
 
+#novel_footer .undernavi a:hover,
 #footer .undernavi a:hover {
-    color: var(--n2k-color-link)
+    color: var(--n2k-color-link) !important;
 }
 
 #search input[type="text"] {
     background: var(--n2k-background);
     color: var(--n2k-color-text);
-    border: 2px inset var(--n2k-background-accent-sub);
+    border-color: var(--n2k-background-accent-sub);
 }
 
 #search input[type="submit"] {
     background: var(--n2k-background);
     color: var(--n2k-color-text);
     border: 1px solid var(--n2k-background-accent-sub);
-    padding: 3px;
 }
 
 /* 最下, 最上 変遷ボタン */
@@ -173,6 +177,121 @@ a:hover {
     text-decoration: none;
 }
 
+/* 目次 */
 div.chapter_title {
     color: #888;
+}
+
+dt.long_update {
+    color: var(--n2k-color-text-sub);
+}
+
+dt.long_update u {
+    color: var(--n2k-color-text);
+}
+
+dt.long_update u:hover {
+    color: var(--n2k-color-link);
+}
+
+/* 小説情報 */
+h1 a,
+h1 a:visited,
+#pre_info a,
+#ad_s_box a,
+#qr       a,
+#pre_info,
+#data_link h2 {
+    color: var(--n2k-color-text);
+}
+
+h1         a:hover,
+#qr        a:hover,
+#pre_info  a:hover,
+#ad_s_box  a:hover,
+#data_link a:hover{
+    color: var(--n2k-color-link) !important;
+}
+
+#qr,
+#data_link a {
+    color: var(--n2k-color-text-sub);
+}
+
+#noveltable1 th,
+#noveltable2 th {
+    color: var(--n2k-color-text);
+    background: var(--n2k-background-accent) !important;
+    border-color: var(--n2k-background-accent-sub);
+}
+
+#noveltable1 td,
+#noveltable2 td {
+    color: var(--n2k-color-text);
+    border-color: var(--n2k-background-accent-sub);
+}
+
+.uketuke {
+    color: var(--n2k-color-text-sub);
+}
+
+#novelindex_button a {
+    color: var(--n2k-color-text);
+    background: var(--n2k-background-accent);
+    border-color: var(--n2k-background-accent-sub);
+}
+
+#novelindex_button a:hover {
+    color: var(--n2k-color-text);
+    background: var(--n2k-background-accent-sub);
+    border-color: var(--n2k-background-accent-sub);
+}
+
+#onazi {
+    border-color: var(--n2k-background-accent-sub);
+}
+
+#onazi .th {
+    color: var(--n2k-color-text);
+    background: var(--n2k-background-accent) !important;
+}
+
+#onazi .th   a:hover,
+#onazi .info a:hover {
+    color: var(--n2k-color-link) !important;
+}
+
+#onazi .info {
+    color: var(--n2k-color-text-sub);
+}
+
+#onazi .ex {
+    color: var(--n2k-color-text);
+}
+
+#trackback {
+    background: var(--n2k-background);
+    border-color: var(--n2k-background-accent-sub);
+}
+
+#trackback a {
+    color: var(--n2k-color-text-sub);
+}
+
+#trackback a:hover {
+    color: var(--n2k-color-link);
+}
+
+#trackback h2 {
+    color: var(--n2k-color-text);
+}
+
+#trackback tr {
+    color: var(--n2k-color-text);
+}
+
+#trackback td input {
+    color: var(--n2k-color-text);
+    background: var(--n2k-background);
+    border-color: var(--n2k-background-accent-sub);
 }
