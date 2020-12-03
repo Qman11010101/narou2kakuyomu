@@ -22,23 +22,39 @@ ul#head_nav li a:hover {
 }
 
 #novel_color,
-a, a:visited{
+#novel_contents a,
+#novel_contents a:visited{
     color: var(--n2k-color-text);
 }
 
-a:hover {
+#novel_contents a:hover {
     color: var(--n2k-color-link);
-    text-decoration: underline;
 }
 
 .more,
 .novel_writername {
-    color: var(--n2k-color-text-sub);
+    color: var(--n2k-color-text-sub) !important;
+}
+
+.more:hover {
+    text-decoration: underline;
+}
+
+.novel_writername a:hover {
+    text-decoration: none !important;
 }
 
 .contents1 {
     background: var(--n2k-background);
     color: var(--n2k-color-text-sub);
+}
+
+.contents1 a {
+    color: var(--n2k-color-text);
+}
+
+.contents1 a:hover {
+    color: var(--n2k-color-link);
 }
 
 /* 前後話ボタン */
@@ -187,16 +203,64 @@ div.chapter_title {
     color: #888;
 }
 
+dl.novel_sublist2 {
+    color: var(--n2k-color-text);
+}
+
+dl.novel_sublist2:hover{
+    border-bottom: 1px solid #99ddff;
+}
+
+dl.novel_sublist2 a:hover {
+    color: var(--n2k-color-link);
+}
+
 dt.long_update {
-    color: var(--n2k-color-text-sub);
+    color: var(--n2k-color-text-sub) !important;
 }
 
 dt.long_update u {
     color: var(--n2k-color-text);
+    text-decoration: none;
+    cursor: pointer;
 }
 
 dt.long_update u:hover {
     color: var(--n2k-color-link);
+}
+
+.center {
+    color: var(--n2k-color-text);
+}
+
+#recommend {
+    background: var(--n2k-background);
+    border-color: var(--n2k-background-accent);
+}
+
+#recommend h3 {
+    color: var(--n2k-color-text);
+}
+
+.recommend_novel,
+.recommend_novel a:hover{
+    background: var(--n2k-background);
+}
+
+.reconovel_title,
+.recommend_ex {
+    color: var(--n2k-color-text);
+    text-decoration: none;
+}
+
+ul.reco,
+ul.reco li {
+    color: var(--n2k-color-text-sub);
+}
+
+ul.reco li.genre {
+    color: var(--n2k-color-text);
+    background: var(--n2k-background-accent);
 }
 
 /* 小説情報 */
