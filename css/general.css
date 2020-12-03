@@ -3,6 +3,7 @@
 }
 
 /* 前後話ボタン */
+
 .novel_bn {
     writing-mode: horizontal-tb;
     display: flex;
@@ -17,14 +18,27 @@
     margin: 0 -1px 0 0;
 }
 
-.novel_bn a#lower_back { order: 0; }
+.novel_bn a#lower_back {
+    order: 0;
+}
 
-.novel_bn a#table_contents { order: 1; }
+.novel_bn a#table_contents {
+    order: 1;
+}
 
-.novel_bn a#lower_next { order: 2; }
+.novel_bn a#lower_next {
+    order: 2;
+}
 
 /* 小説説明 */
 
 #novel_ex {
     font-size: 105%;
+}
+
+/* ページ下部遷移ボタン */
+
+#pageBottom {
+    width: 17px;
+    text-align: center;
 }
