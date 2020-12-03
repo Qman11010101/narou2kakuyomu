@@ -68,6 +68,10 @@ browser.storage.sync.get(["font_style"], function (res) {
     append_css(font_dir + "apply_font.css");
 });
 
+// ページ下部遷移/上部遷移ボタンのテキスト書き換え
+document.getElementById("pageBottom").innerText = "▼";
+document.getElementById("pageTop").innerText = "▲ ページトップへ";
+
 // 目次/前へ/次へボタンにID付与していじりやすくする
 let novel_bn = document.querySelectorAll(".novel_bn a");
 let id_list = []
