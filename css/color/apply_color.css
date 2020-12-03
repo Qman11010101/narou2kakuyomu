@@ -213,6 +213,10 @@ dl.novel_sublist2:hover{
     margin-bottom: 0;
 }
 
+dl.novel_sublist2 a {
+    display: block;
+}
+
 dl.novel_sublist2 a:hover {
     color: var(--n2k-color-link);
 }
