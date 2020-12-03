@@ -18,7 +18,11 @@
             ],
             "js": [
                 "apply_style.js"
-            ]
+            ],
+            "css": [
+                "css/general.css"
+            ],
+            "run_at": "document_end"
         }
     ],
     "browser_action": {
@@ -31,7 +35,6 @@
         "storage"
     ],
     "web_accessible_resources":[
-        "css/general.css",
         "css/color/black.css",
         "css/color/blue.css",
         "css/color/kinari.css",
