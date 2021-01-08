@@ -5,7 +5,7 @@
 
 /* 本文, 前書き, 後書き */
 #novel_honbun, #novel_p, #novel_a {
-    line-height: 1.8;
+    line-height: 1.8 !important;
     padding: 0;
     width: 665px;
     overflow-wrap: break-word;
