@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "__MSG_extensionName__",
-    "version": "1.1",
+    "version": "1.1.0",
     "description": "__MSG_extensionDescription__",
     "developer" : {
         "name":"Kjuman Enobikto / kobi32768"
@@ -18,7 +18,11 @@
             ],
             "js": [
                 "apply_style.js"
-            ]
+            ],
+            "css": [
+                "css/general.css"
+            ],
+            "run_at": "document_end"
         }
     ],
     "browser_action": {
@@ -31,7 +35,6 @@
         "storage"
     ],
     "web_accessible_resources":[
-        "css/general.css",
         "css/color/black.css",
         "css/color/blue.css",
         "css/color/kinari.css",
