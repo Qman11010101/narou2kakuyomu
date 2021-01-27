@@ -20,17 +20,17 @@
 
 .novel_bn a#lower_back {
     order: 0;
-    flex-grow: 3;
+    flex-basis: 37.5%;
 }
 
 .novel_bn a#table_contents {
     order: 1;
-    flex-grow: 2;
+    flex-basis: 25%;
 }
 
 .novel_bn a#lower_next {
     order: 2;
-    flex-grow: 3;
+    flex-basis: 37.5%;
 }
 
 /* 小説説明 */
