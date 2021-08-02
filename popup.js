@@ -73,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+    
     // フォント変更適用
     const gothicdiv = document.getElementById("gothicdiv");
     gothicdiv.addEventListener("click", function () {
