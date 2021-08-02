@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //データ読込
     const load_data = document.getElementById("load_data");
-    load_data.addEventListener("click", function () {
+    // load_data.addEventListener("click", function () {
+    window.addEventListener("load", function () {
         const disp_elements = document.getElementById("display_button").display_button;
         const scri_elements = document.getElementById("display_pref_post").display_pref_post;
         const size_elements = document.getElementById("font_size").font_size;
