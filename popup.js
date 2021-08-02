@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     //データ読込
-    const load_data = document.getElementById("load_data");
+    // const load_data = document.getElementById("load_data");
     // load_data.addEventListener("click", function () {
     window.addEventListener("load", function () {
         const disp_elements = document.getElementById("display_button").display_button;
