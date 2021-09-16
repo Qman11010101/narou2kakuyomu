@@ -25,7 +25,7 @@ browser.storage.sync.get(["background_color"], function (res) {
 });
 
 // 表示調整ボタン
-let disp, dispap, size, bgcolor, font;
+let disp, dispap, width, size, bgcolor, font;
 browser.storage.sync.get(["display_button"], function (res) {
     const rd = res.display_button;
     disp = (rd != undefined) ? rd : "hide"; // display, hide
@@ -46,6 +46,18 @@ browser.storage.sync.get(["display_pref_post"], function (res) {
     const dispap_dir = "css/disp_script/";
     const dispap_css = dispap_dir + dispap + ".css";
     append_css(dispap_css);
+});
+
+// 表示幅
+browser.storage.sync.get(["display_width"], function (res) {
+    const rw = res.display_width;
+    // rw   : x1  , x1.25, x1.5
+    // width: x100, x125 , x150
+    width = (rw != undefined) ? rw : "x100"; // x100, x125, x150
+    check_pass(`${rw} / ${width}`)
+    const width_dir = "css/disp_width/";
+    const width_css = width_dir + width + ".css";
+    append_css(width_css);
 });
 
 // 文字サイズ

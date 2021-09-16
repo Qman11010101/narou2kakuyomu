@@ -4,28 +4,32 @@ document.addEventListener("DOMContentLoaded", function () {
     save_data.addEventListener("click", function () {
         const disp = document.getElementById("display_button").display_button.value;
         const scri = document.getElementById("display_pref_post").display_pref_post.value;
+        const dwid = document.getElementById("display_width").display_width.value;
         const size = document.getElementById("font_size").font_size.value;
         const bgcl = document.getElementById("background_color").background_color.value;
         const font = document.getElementById("font_style").font_style.value;
         const kvobj = {
             display_button: disp,
             display_pref_post: scri,
+            display_width: dwid,
             font_size: size,
             background_color: bgcl,
             font_style: font
         };
         browser.storage.sync.set(kvobj, check_pass());
     });
+    // const default_disp_width = document.getElementById()
 
     //データ読込
     window.addEventListener("load", function () {
         const disp_elements = document.getElementById("display_button").display_button;
         const scri_elements = document.getElementById("display_pref_post").display_pref_post;
+        const dwid_elements = document.getElementById("display_width").display_width;
         const size_elements = document.getElementById("font_size").font_size;
         const bgcl_elements = document.getElementById("background_color").background_color;
         const font_elements = document.getElementById("font_style").font_style;
 
-        let disp, scri, size, bgcl, font;
+        let disp, scri, dwid, size, bgcl, font;
         browser.storage.sync.get(["display_button"], function (res) {
             const rd = res.display_button;
             disp = (rd != undefined) ? rd : "hide"; // display, hide
@@ -43,6 +47,16 @@ document.addEventListener("DOMContentLoaded", function () {
                     scri_elements[i].checked = true;
                 }
             }
+        });
+        browser.storage.sync.get(["display_width"], function (res) {
+            const rw = res.display_width;
+            dwid = (rw === undefined) ? "x100" : rw; // x100, x125, x150
+            for (let i = 0; i < dwid_elements.length; i++) {
+                if (dwid_elements[i].id == dwid) {
+                    dwid_elements[i].checked = true;
+                }
+            }
+            console.log( document.getElementById("novel_subtitle").width );
         });
         browser.storage.sync.get(["font_size"], function (res) {
             const rs = res.font_size;
