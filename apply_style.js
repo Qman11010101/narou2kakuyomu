@@ -25,7 +25,7 @@ browser.storage.sync.get(["background_color"], function (res) {
 });
 
 // 表示調整ボタン
-let disp, dispap, width, size, bgcolor, font;
+let disp, dispap, w_mul, size, bgcolor, font;
 browser.storage.sync.get(["display_button"], function (res) {
     const rd = res.display_button;
     disp = (rd != undefined) ? rd : "hide"; // display, hide
@@ -51,12 +51,15 @@ browser.storage.sync.get(["display_pref_post"], function (res) {
 // 表示幅
 browser.storage.sync.get(["display_width"], function (res) {
     const rw = res.display_width;
+    const dw = 730
     // rw   : x1  , x1.25, x1.5
-    // width: x100, x125 , x150
-    width = (rw != undefined) ? rw : "x100"; // x100, x125, x150
-    check_pass(`${rw} / ${width}`)
-    const width_dir = "css/disp_width/";
-    const width_css = width_dir + width + ".css";
+    w_mul = (rw === undefined ? "x1" : rw).substr(1); // 1, 1.25, 1.5
+    const width = parseFloat(w_mul) * dw
+    const elements = ["novel_color", "novel_honbun", "novel_p", "novel_a"];
+    for (const i of elements) {
+        const elem = document.getElementById(i);
+        elem.style.width = width.toString() + "px";
+    }
     append_css(width_css);
 });
 

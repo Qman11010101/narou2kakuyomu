@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
         };
         browser.storage.sync.set(kvobj, check_pass());
     });
-    // const default_disp_width = document.getElementById()
 
     //データ読込
     window.addEventListener("load", function () {
@@ -50,13 +49,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         browser.storage.sync.get(["display_width"], function (res) {
             const rw = res.display_width;
-            dwid = (rw === undefined) ? "x100" : rw; // x100, x125, x150
+            dwid = (rw === undefined) ? "x1" : rw; // x1, x1.25, x1.5
             for (let i = 0; i < dwid_elements.length; i++) {
                 if (dwid_elements[i].id == dwid) {
                     dwid_elements[i].checked = true;
                 }
             }
-            console.log( document.getElementById("novel_subtitle").width );
         });
         browser.storage.sync.get(["font_size"], function (res) {
             const rs = res.font_size;
