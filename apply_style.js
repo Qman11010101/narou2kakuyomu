@@ -60,7 +60,6 @@ browser.storage.sync.get(["display_width"], function (res) {
         const elem = document.getElementById(i);
         elem.style.width = width.toString() + "px";
     }
-    append_css(width_css);
 });
 
 // 文字サイズ
