@@ -42,7 +42,7 @@ browser.storage.sync.get(["display_button"], function (res) {
 // 前書き・後書き
 browser.storage.sync.get(["display_pref_post"], function (res) {
     const rds = res.display_pref_post;
-    dispap = (rds != undefined) ? rds : "hide"; // display, hide
+    dispap = (rds != undefined) ? rds : "displayscript"; // displayscript, hidescript
     const dispap_dir = "css/disp_script/";
     const dispap_css = dispap_dir + dispap + ".css";
     append_css(dispap_css);

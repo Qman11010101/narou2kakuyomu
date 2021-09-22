@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         browser.storage.sync.get(["display_pref_post"], function (res) {
             const rds = res.display_pref_post;
-            scri = (rds != undefined) ? rds : "hide"; // display, hide
+            scri = (rds != undefined) ? rds : "displayscript"; // displayscript, hidescript
             for (let i = 0; i < scri_elements.length; i++) {
                 if (scri_elements[i].id == scri) {
                     scri_elements[i].checked = true;
