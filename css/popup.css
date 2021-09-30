@@ -34,7 +34,7 @@ input {
     margin: 15px 16px 7.5px;
 }
 
-#display_button, #display_pref_post, #font_size, #background_color, #font_style {
+.button-area {
     margin: 3.75px 16px 7.5px;
 }
 
@@ -57,7 +57,7 @@ input {
 
 label {
     min-width: 60px;
-    height: 45px;
+    height: 40px;
     border: 1px solid #ddd;
     display: flex;
     justify-content: center;

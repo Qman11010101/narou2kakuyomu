@@ -4,12 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
     save_data.addEventListener("click", function () {
         const disp = document.getElementById("display_button").display_button.value;
         const scri = document.getElementById("display_pref_post").display_pref_post.value;
+        const dwid = document.getElementById("display_width").display_width.value;
         const size = document.getElementById("font_size").font_size.value;
         const bgcl = document.getElementById("background_color").background_color.value;
         const font = document.getElementById("font_style").font_style.value;
         const kvobj = {
             display_button: disp,
             display_pref_post: scri,
+            display_width: dwid,
             font_size: size,
             background_color: bgcl,
             font_style: font
@@ -21,26 +23,36 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("load", function () {
         const disp_elements = document.getElementById("display_button").display_button;
         const scri_elements = document.getElementById("display_pref_post").display_pref_post;
+        const dwid_elements = document.getElementById("display_width").display_width;
         const size_elements = document.getElementById("font_size").font_size;
         const bgcl_elements = document.getElementById("background_color").background_color;
         const font_elements = document.getElementById("font_style").font_style;
 
-        let disp, scri, size, bgcl, font;
+        let disp, scri, dwid, size, bgcl, font;
         browser.storage.sync.get(["display_button"], function (res) {
             const rd = res.display_button;
             disp = (rd != undefined) ? rd : "hide"; // display, hide
             for (let i = 0; i < disp_elements.length; i++) {
-                if (disp_elements[i].id == disp) {
+                if (disp_elements[i].value == disp) {
                     disp_elements[i].checked = true;
                 }
             }
         });
         browser.storage.sync.get(["display_pref_post"], function (res) {
             const rds = res.display_pref_post;
-            scri = (rds != undefined) ? rds : "hide"; // display, hide
+            scri = (rds != undefined) ? rds : "displayscript"; // displayscript, hidescript
             for (let i = 0; i < scri_elements.length; i++) {
-                if (scri_elements[i].id == scri) {
+                if (scri_elements[i].value == scri) {
                     scri_elements[i].checked = true;
+                }
+            }
+        });
+        browser.storage.sync.get(["display_width"], function (res) {
+            const rw = res.display_width;
+            dwid = (rw === undefined) ? "x1" : rw; // x1, x1.25, x1.5
+            for (let i = 0; i < dwid_elements.length; i++) {
+                if (dwid_elements[i].value == dwid) {
+                    dwid_elements[i].checked = true;
                 }
             }
         });
@@ -48,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const rs = res.font_size;
             size = (rs === undefined) ? "medium" : rs; // small, medium, large, huge
             for (let i = 0; i < size_elements.length; i++) {
-                if (size_elements[i].id == size) {
+                if (size_elements[i].value == size) {
                     size_elements[i].checked = true;
                 }
             }
@@ -57,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const rb = res.background_color;
             bgcl = (rb === undefined) ? "white" : rb; // white, black, kinari, blue
             for (let i = 0; i < bgcl_elements.length; i++) {
-                if (bgcl_elements[i].id == bgcl) {
+                if (bgcl_elements[i].value == bgcl) {
                     bgcl_elements[i].checked = true;
                 }
             }
@@ -66,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const rf = res.font_style;
             font = (rf === undefined) ? "mincho" : rf; // mincho, gothic
             for (let i = 0; i < font_elements.length; i++) {
-                if (font_elements[i].id == font) {
+                if (font_elements[i].value == font) {
                     font_elements[i].checked = true;
                     conv_font(font);
                 }
