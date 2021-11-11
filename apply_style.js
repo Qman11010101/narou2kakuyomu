@@ -28,7 +28,7 @@ browser.storage.sync.get(["background_color"], function (res) {
 let disp, dispap, w_mul, size, bgcolor, font;
 browser.storage.sync.get(["display_button"], function (res) {
     const rd = res.display_button;
-    disp = (rd != undefined) ? rd : "hide"; // display, hide
+    disp = (rd === undefined) ? "hide" : rd; // display, hide
 
     // 1要素だけなのでCSSファイル適用しないで直接弄っている
     let toggle = document.getElementsByClassName("toggle");
@@ -42,7 +42,7 @@ browser.storage.sync.get(["display_button"], function (res) {
 // 前書き・後書き
 browser.storage.sync.get(["display_pref_post"], function (res) {
     const rds = res.display_pref_post;
-    dispap = (rds != undefined) ? rds : "displayscript"; // displayscript, hidescript
+    dispap = (rds === undefined) ? "displayscript" : rds; // displayscript, hidescript
     const dispap_dir = "css/disp_script/";
     const dispap_css = dispap_dir + dispap + ".css";
     append_css(dispap_css);
@@ -54,7 +54,7 @@ browser.storage.sync.get(["display_width"], function (res) {
     const dw = 730
     // rw   : x1  , x1.25, x1.5
     w_mul = (rw === undefined ? "x1" : rw).substr(1); // 1, 1.25, 1.5
-    const width = parseFloat(w_mul) * dw
+    const width = parseFloat(w_mul) * dw;
     const elements = ["novel_color", "novel_honbun", "novel_p", "novel_a"];
     for (const i of elements) {
         const elem = document.getElementById(i);
