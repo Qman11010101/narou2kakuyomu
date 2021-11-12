@@ -13,7 +13,7 @@
     <div id="settingswrapper">
         <span class="setting-title">表示調整ボタン</span>
         <form id="display_button" class="button-area">
-            <div class="container">
+            <div class="container" id="display_button_container">
                 <div class="selectbox" id="displaydiv"><input type="radio" name="display_button" value="display"
                         id="display"><label for="display">表示する</label></div>
                 <div class="selectbox" id="hidediv"><input type="radio" name="display_button" value="hide" id="hide"
@@ -23,7 +23,7 @@
 
         <span class="setting-title">前書き・後書き</span>
         <form id="display_pref_post" class="button-area">
-            <div class="container">
+            <div class="container" id="display_pref_post_container">
                 <div class="selectbox" id="dispscriptdiv"><input type=radio name="display_pref_post"
                         value="displayscript" id="displayscript" checked><label for="displayscript">表示する</label></div>
                 <div class="selectbox" id="hidescriptdiv"><input type=radio name="display_pref_post" value="hidescript"
@@ -33,7 +33,7 @@
 
         <span class="setting-title">表示幅</span>
         <form id="display_width" class="button-area">
-            <div class="container">
+            <div class="container" id="display_width_container">
                 <div class="selectbox" id="width1x"><input type=radio name="display_width" value="x1" id="x1w"
                         checked><label for="x1w">100%</label></div>
                 <div class="selectbox" id="width1.25x"><input type=radio name="display_width" value="x1.25"
@@ -45,7 +45,7 @@
 
         <span class="setting-title">文字サイズ</span>
         <form id="font_size" class="button-area">
-            <div class="container">
+            <div class="container" id="font_size_container">
                 <div class="selectbox" id="smalldiv"><input type="radio" name="font_size" value="small"
                         id="small"><label for="small">小</label></div>
                 <div class="selectbox" id="mediumdiv"><input type="radio" name="font_size" value="medium" id="medium"
@@ -59,7 +59,7 @@
 
         <span class="setting-title">背景色</span>
         <form id="background_color" class="button-area">
-            <div class="container">
+            <div class="container" id="background_color_container">
                 <div class="selectbox" id="whitediv"><input type="radio" name="background_color" value="white"
                         id="white" checked><label for="white">白</label></div>
                 <div class="selectbox" id="blackdiv"><input type="radio" name="background_color" value="black"
@@ -73,7 +73,7 @@
 
         <span class="setting-title">フォント</span>
         <form id="font_style" class="button-area">
-            <div class="container">
+            <div class="container" id="font_style_container">
                 <div class="selectbox" id="minchodiv"><input type="radio" name="font_style" value="mincho" id="mincho"
                         checked><label for="mincho">明朝</label></div>
                 <div class="selectbox" id="gothicdiv"><input type="radio" name="font_style" value="gothic"
@@ -82,10 +82,10 @@
         </form>
     </div>
 
-    <footer>
+    <!-- <footer>
         <span id="check"></span>
         <button id="save_data">保存</button>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
