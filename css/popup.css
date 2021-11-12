@@ -16,6 +16,14 @@ header {
     background: #f2f1f0;
 }
 
+#settingswrapper {
+    max-height: 500px;
+    padding-bottom: 7px;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
 .container {
     display: flex;
     width: 272px;
@@ -57,7 +65,7 @@ input {
 
 label {
     min-width: 60px;
-    height: 40px;
+    height: 45px;
     border: 1px solid #ddd;
     display: flex;
     justify-content: center;
@@ -83,35 +91,6 @@ footer {
     display: flex;
     justify-content: end;
     padding: 7.5px 16px 16px;
-}
-
-#save_data, #load_data {
-    font-family: dcsymbols, 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pr6N', 'Hiragino Kaku Gothic Pr6N', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', 'Segoe UI', Verdana, 'メイリオ', Meiryo, sans-serif;
-    border: 1px solid #0990cc;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, .2);
-    background-color: #4baae0;
-    color: #fff;
-    padding: 5px 10px;
-    margin-left: 12px;
-    border-radius: 3px;
-    transition-property: background-color;
-    transition-duration: .1s;
-    transition-timing-function: linear;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-#check {
-    padding: 5px 0;
-    flex: 1;
-}
-
-#save_data:hover, #load_data:hover {
-    background-color: #0990cc;
-}
-
-#save_data:active, #load_data:active {
-    box-shadow: 0 0 5px 0 #0990cc;
 }
 
 /*各セル固有の設定*/

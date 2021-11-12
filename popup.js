@@ -1,22 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
     // データ保存
-    const save_data = document.getElementById("save_data");
-    save_data.addEventListener("click", function () {
-        const disp = document.getElementById("display_button").display_button.value;
-        const scri = document.getElementById("display_pref_post").display_pref_post.value;
-        const dwid = document.getElementById("display_width").display_width.value;
-        const size = document.getElementById("font_size").font_size.value;
-        const bgcl = document.getElementById("background_color").background_color.value;
-        const font = document.getElementById("font_style").font_style.value;
-        const kvobj = {
-            display_button: disp,
-            display_pref_post: scri,
-            display_width: dwid,
-            font_size: size,
-            background_color: bgcl,
-            font_style: font
-        };
-        browser.storage.sync.set(kvobj, check_pass());
+    const display_button = document.getElementById("display_button_container");
+    const display_pref_post = document.getElementById("display_pref_post_container");
+    const display_width = document.getElementById("display_width_container");
+    const font_size = document.getElementById("font_size_container");
+    const background_color = document.getElementById("background_color_container");
+    const font_style = document.getElementById("font_style_container");
+
+    display_button.addEventListener("click", function () {
+        save_settings();
+    });
+    display_pref_post.addEventListener("click", function () {
+        save_settings();
+    });
+    display_width.addEventListener("click", function () {
+        save_settings();
+    });
+    font_size.addEventListener("click", function () {
+        save_settings();
+    });
+    background_color.addEventListener("click", function () {
+        save_settings();
+    });
+    font_style.addEventListener("click", function () {
+        save_settings();
     });
 
     //データ読込
@@ -85,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-    
+
     // フォント変更適用
     const gothicdiv = document.getElementById("gothicdiv");
     gothicdiv.addEventListener("click", function () {
@@ -96,6 +103,24 @@ document.addEventListener("DOMContentLoaded", function () {
         conv_font("mincho");
     });
 });
+
+function save_settings() {
+    const disp = document.getElementById("display_button").display_button.value;
+    const scri = document.getElementById("display_pref_post").display_pref_post.value;
+    const dwid = document.getElementById("display_width").display_width.value;
+    const size = document.getElementById("font_size").font_size.value;
+    const bgcl = document.getElementById("background_color").background_color.value;
+    const font = document.getElementById("font_style").font_style.value;
+    const kvobj = {
+        display_button: disp,
+        display_pref_post: scri,
+        display_width: dwid,
+        font_size: size,
+        background_color: bgcl,
+        font_style: font
+    };
+    browser.storage.sync.set(kvobj);
+}
 
 function conv_font(font_name) {
     const label = document.getElementsByTagName("label");
@@ -112,8 +137,8 @@ function conv_font(font_name) {
     };
 }
 
-function check_pass() {
-    const checkspan = document.getElementById("check");
-    checkspan.style.color = "#009900";
-    checkspan.textContent = " ✓ 保存しました";
-}
+// function check_pass() {
+//     const checkspan = document.getElementById("check");
+//     checkspan.style.color = "#009900";
+//     checkspan.textContent = " ✓ 保存しました";
+// }
