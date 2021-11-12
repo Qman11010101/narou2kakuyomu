@@ -94,6 +94,7 @@ document.getElementById("pageTop").innerText = "▲ ページトップへ";
 // 目次/前へ/次へボタンにID付与していじりやすくする
 const novel_bn = document.querySelectorAll(".novel_bn a");
 
+// トップページではエラーになる処理だが一番下なので問題ないはず
 const novel_no = document.getElementById("novel_no").innerText;
 let id_list = []
 if (isFirstStory(novel_no)) {
