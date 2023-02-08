@@ -1,7 +1,7 @@
 function append_css(file_path) {
     const link = document.createElement("link");
     const head = document.getElementsByTagName("head")[0];
-    link.href = browser.runtime.getURL(file_path);
+    link.href = chrome.runtime.getURL(file_path);
     link.rel = "stylesheet";
     link.type = "text/css";
     head.appendChild(link);
@@ -20,7 +20,7 @@ function isLatestStory(novel_no) {
 // undefinedならデフォルト値が代入される
 
 // 背景色
-browser.storage.sync.get(["background_color"], function (res) {
+chrome.storage.sync.get(["background_color"], function (res) {
     const rb = res.background_color;
     bgcolor = (rb === undefined) ? "white" : rb; // white, black, kinari, blue
     const bgcolor_dir = "css/color/";
@@ -31,7 +31,7 @@ browser.storage.sync.get(["background_color"], function (res) {
 
 // 表示調整ボタン
 let disp, dispap, w_mul, size, bgcolor, font;
-browser.storage.sync.get(["display_button"], function (res) {
+chrome.storage.sync.get(["display_button"], function (res) {
     const rd = res.display_button;
     disp = (rd === undefined) ? "hide" : rd; // display, hide
 
@@ -45,7 +45,7 @@ browser.storage.sync.get(["display_button"], function (res) {
 });
 
 // 前書き・後書き
-browser.storage.sync.get(["display_pref_post"], function (res) {
+chrome.storage.sync.get(["display_pref_post"], function (res) {
     const rds = res.display_pref_post;
     dispap = (rds === undefined) ? "displayscript" : rds; // displayscript, hidescript
     const dispap_dir = "css/disp_script/";
@@ -54,7 +54,7 @@ browser.storage.sync.get(["display_pref_post"], function (res) {
 });
 
 // 表示幅
-browser.storage.sync.get(["display_width"], function (res) {
+chrome.storage.sync.get(["display_width"], function (res) {
     const rw = res.display_width;
     const dw = 730
     // rw   : x1  , x1.25, x1.5
@@ -68,7 +68,7 @@ browser.storage.sync.get(["display_width"], function (res) {
 });
 
 // 文字サイズ
-browser.storage.sync.get(["font_size"], function (res) {
+chrome.storage.sync.get(["font_size"], function (res) {
     const rs = res.font_size;
     size = (rs === undefined) ? "medium" : rs; // small, medium, large, huge
     const size_dir = "css/size/";
@@ -78,7 +78,7 @@ browser.storage.sync.get(["font_size"], function (res) {
 });
 
 // フォント
-browser.storage.sync.get(["font_style"], function (res) {
+chrome.storage.sync.get(["font_style"], function (res) {
     const rf = res.font_style;
     font = (rf === undefined) ? "mincho" : rf; // mincho, gothic
     const font_dir = "css/font/"

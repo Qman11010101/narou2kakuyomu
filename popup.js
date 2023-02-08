@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const font_elements = document.getElementById("font_style").font_style;
 
         let disp, scri, dwid, size, bgcl, font;
-        browser.storage.sync.get(["display_button"], function (res) {
+        chrome.storage.sync.get(["display_button"], function (res) {
             const rd = res.display_button;
             disp = (rd != undefined) ? rd : "hide"; // display, hide
             for (let i = 0; i < disp_elements.length; i++) {
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         });
-        browser.storage.sync.get(["display_pref_post"], function (res) {
+        chrome.storage.sync.get(["display_pref_post"], function (res) {
             const rds = res.display_pref_post;
             scri = (rds != undefined) ? rds : "displayscript"; // displayscript, hidescript
             for (let i = 0; i < scri_elements.length; i++) {
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         });
-        browser.storage.sync.get(["display_width"], function (res) {
+        chrome.storage.sync.get(["display_width"], function (res) {
             const rw = res.display_width;
             dwid = (rw === undefined) ? "x1" : rw; // x1, x1.25, x1.5
             for (let i = 0; i < dwid_elements.length; i++) {
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         });
-        browser.storage.sync.get(["font_size"], function (res) {
+        chrome.storage.sync.get(["font_size"], function (res) {
             const rs = res.font_size;
             size = (rs === undefined) ? "medium" : rs; // small, medium, large, huge
             for (let i = 0; i < size_elements.length; i++) {
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         });
-        browser.storage.sync.get(["background_color"], function (res) {
+        chrome.storage.sync.get(["background_color"], function (res) {
             const rb = res.background_color;
             bgcl = (rb === undefined) ? "white" : rb; // white, black, kinari, blue
             for (let i = 0; i < bgcl_elements.length; i++) {
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         });
-        browser.storage.sync.get(["font_style"], function (res) {
+        chrome.storage.sync.get(["font_style"], function (res) {
             const rf = res.font_style;
             font = (rf === undefined) ? "mincho" : rf; // mincho, gothic
             for (let i = 0; i < font_elements.length; i++) {
@@ -119,7 +119,7 @@ function save_settings() {
         background_color: bgcl,
         font_style: font
     };
-    browser.storage.sync.set(kvobj);
+    chrome.storage.sync.set(kvobj);
 }
 
 function conv_font(font_name) {
