@@ -23,7 +23,8 @@ ul#head_nav li a:hover {
 
 #novel_color,
 #novel_contents a,
-#novel_contents a:visited{
+#novel_contents a:visited,
+.novel_view {
     color: var(--n2k-color-text);
 }
 
